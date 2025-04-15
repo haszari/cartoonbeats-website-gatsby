@@ -1,0 +1,23 @@
+{
+  "name": "cartoon-beats-reality-lean-static-gatsby-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "cartoon-beats-reality-lean-static-gatsby-site",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^5.14.1",
+    "gatsby-plugin-sass": "^6.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.86.3"
+  }
+}
