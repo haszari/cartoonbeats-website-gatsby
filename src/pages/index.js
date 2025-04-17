@@ -8,19 +8,19 @@ import ReleaseList from '../patterns/ReleaseList';
 
 import "./index.scss"
 
-// import releases from '../data/releases.js'
-
 const MainPage = ({data}) => {
   const imageFiles = data.allFile.nodes;
 
-  const releasesWithImages = data.allReleasesYaml.nodes.map(releaseInfo => {
-    const imageNode = imageFiles.find(
-      img => img.relativePath === releaseInfo.cover
-    );
-    const image = getImage(imageNode);
+  const releasesWithImages = data.allReleasesYaml.nodes
+    .sort((a, b) => (b.catalogueNumber.localeCompare(a.catalogueNumber)))
+    .map(releaseInfo => {
+      const imageNode = imageFiles.find(
+        img => img.relativePath === releaseInfo.cover
+      );
+      const image = getImage(imageNode);
 
-    return { ...releaseInfo, image };
-  });
+      return { ...releaseInfo, image };
+    });
 
   return (
     <main>
@@ -40,9 +40,10 @@ export const query = graphql`{
   allReleasesYaml {
     nodes {
       id
+      catalogueNumber
+      artist
       title
       cover
-      artist
     }
   }
   allFile(filter: {sourceInstanceName: {eq: "images"}}) {
