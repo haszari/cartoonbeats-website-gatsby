@@ -11,7 +11,7 @@
 - catalogueNumber: "CBR018"
   artist: "Haszari"
   title: "Photic Reflex"
-  cover: "covers/cbr018.png"
+  cover: "covers/cbr018.jpg"
   listenLinks: 
     bandcamp: "https://haszari.bandcamp.com/album/photic-reflex"
     apple: "https://music.apple.com/nz/album/photic-reflex/1767698565"
@@ -22,7 +22,7 @@
 - catalogueNumber: "CBR017"
   artist: "Haszari"
   title: "Gumdrop"
-  cover: "covers/cbr017.png"
+  cover: "covers/cbr017.jpg"
   listenLinks: 
     bandcamp: "https://haszari.bandcamp.com/album/gumdrop"
     apple: "https://music.apple.com/nz/album/gumdrop-single/1752777315"
@@ -53,6 +53,19 @@
     beatport: ""
     soundcloud: "https://soundcloud.com/haszari/sets/sinking-galley"
     youtube: "https://www.youtube.com/playlist?list=OLAK5uy_l0dMdedamavdwNSF3LwvF5fa5ipFSWgJw"
+- catalogueNumber: "CBR014"
+  artist: "MÖM"
+  title: "Circles (Haszari remix)"
+  cover: "covers/cbr014.jpg"
+  listenLinks: 
+    spotify: "https://open.spotify.com/track/6pJaBauTLGnOXmftByYXXy"
+    apple: "https://music.apple.com/nz/album/circles-haszari-remix-single/1729992649"
+    youtube: https://www.youtube.com/watch?v=_rjy-E4Bo1o"
+    amazon: "https://www.amazon.com/music/player/albums/B0CVB52QP8"
+    bandcamp: ""
+    beatport: ""
+    soundcloud: ""
+
 - catalogueNumber: "CBR013"
   artist: "Haszari"
   title: "Mivova"
@@ -65,16 +78,233 @@
     apple: "https://music.apple.com/nz/album/mivova/1726131737"
     youtube: "https://www.youtube.com/watch?v=kLNKjf87-XQ"
 
+- catalogueNumber: "CBR011"
+  artist: "Sharkweek"
+  title: "Sumiyoshi"
+  cover: "covers/cbr011.jpg"
+  listenLinks: 
+    bandcamp: ""
+    spotify: ""
+    beatport: ""
+    soundcloud: ""
+    apple: ""
+    youtube: ""
+- catalogueNumber: "CBR010"
+  artist: "Haszari"
+  title: "Like So"
+  cover: "covers/cbr010.jpg"
+  listenLinks: 
+    bandcamp: "https://haszari.bandcamp.com/album/like-so-2"
+    spotify: ""
+    beatport: ""
+    soundcloud: ""
+    apple: ""
+    youtube: ""
+- catalogueNumber: "CBR009"
+  artist: "Haszari"
+  title: "Foundation Slab"
+  cover: "covers/cbr009.jpg"
+  listenLinks: 
+    bandcamp: ""
+    spotify: ""
+    beatport: ""
+    soundcloud: ""
+    apple: ""
+    youtube: ""
 
-# - catalogueNumber: "CBRXXX"
-#   artist: "Haszari"
-#   title: "XXXX"
-#   cover: "covers/cbrxxx.jpg"
-#   listenLinks: 
-#     bandcamp: ""
-#     spotify: ""
-#     beatport: ""
-#     soundcloud: ""
-#     apple: ""
-#     youtube: ""
 
+- catalogueNumber: "CBR008"
+  artist: "Haszari"
+  title: "Redline Train"
+  cover: "covers/cbr008.jpg"
+  listenLinks: 
+    bandcamp: ""
+    spotify: ""
+    beatport: ""
+    soundcloud: ""
+    apple: ""
+    youtube: ""
+- catalogueNumber: "CBR007"
+  artist: "Haszari"
+  title: "Eggs For Tea"
+  cover: "covers/cbr007.jpg"
+  listenLinks: 
+    bandcamp: ""
+    spotify: ""
+    beatport: ""
+    soundcloud: ""
+    apple: ""
+    youtube: ""
+- catalogueNumber: "CBR006"
+  artist: "Haszari"
+  title: "Other People Are Having Breakfast"
+  cover: "covers/cbr006.jpg"
+  listenLinks: 
+    bandcamp: ""
+    spotify: ""
+    beatport: ""
+    soundcloud: ""
+    apple: ""
+    youtube: ""
+
+
+
+
+- catalogueNumber: "CBR005a"
+  title: "Fuzzy Motion"
+  artist: "Nikolozi"
+  cover: "covers/cbr005a.jpg"
+  remixers:
+    - "Haszari"
+    - "nsu"
+  colours:
+    background: "#33002e"
+  listenLinks:
+    spotify: 'https://open.spotify.com/album/6fysfToZ3QcK3NF4WPiUYE'
+    appleMusic: 'https://geo.itunes.apple.com/us/album/fuzzy-motion-single/id1200706497?mt=1&app=music'
+    googlePlay: 'https://play.google.com/music/m/Bbfw7wqqvihttjhx7dlcb5v3nzq?t=Fuzzy_Motion_-_Nikolozi'
+    amazon: 'https://www.amazon.com/Fuzzy-Motion-Nikolozi/dp/B01N16H5TX'
+
+
+- catalogueNumber: "CBR005b"
+  title: "Padded Cell"
+  artist: "Haszari"
+  cover: "covers/cbr005b.jpg"
+  remixers:
+    - "Nikolozi"
+    - "nsu"
+  colours:
+    background: "#c61647"
+  listenLinks:
+    spotify: 'https://open.spotify.com/album/3nZK807I6PZI3DVymT35vl'
+    appleMusic: 'https://itunes.apple.com/us/album/padded-cell-single/id1200706796?uo=4&app=music&at=1001lry3'
+    googlePlay: 'https://play.google.com/store/music/album/Haszari_Padded_Cell?id=Bbvjyhs2lmgwfmqktqlvpkajc2q'
+    amazon: 'http://www.amazon.com/gp/product/B01NAYTDLW'
+
+
+- catalogueNumber: "CBR004a"
+  title: "Blood Orange"
+  artist: "Haszari"
+  cover: "covers/cbr004a.jpg"
+  remixers:
+    - "SoNic Smith"
+    - "nsu"
+  colours:
+     background: "#e3001c"
+  listenLinks:
+     spotify: 'https://open.spotify.com/album/2Jfysi3ktit9ZIdyFDuY7d'
+     appleMusic: 'https://itunes.apple.com/us/album/blood-orange-ep/id1175893872?uo=4&app=music'
+     googlePlay: 'https://play.google.com/store/music/album/Haszari_Blood_Orange?id=Bjeswdu6uiqdbz6mhiq5p6wtj2i'
+     amazon: 'http://www.amazon.com/gp/product/B01MYLP58L'
+
+- catalogueNumber: "CBR004b"
+  title: "RE: Memory"
+  artist: "SoNic Smith"
+  cover: "covers/cbr004b.jpg"
+  remixers:
+    - "Haszari"
+    - "nsu"
+  colours:
+    background: "#89000d"
+  listenLinks:
+    spotify: 'https://open.spotify.com/album/1sK6Pni3PhF6iTjxzC9WMK'
+    appleMusic: 'https://itunes.apple.com/us/album/re-memory-single/id1175897729?uo=4&app=music'
+    googlePlay: 'https://play.google.com/store/music/album/SoNic_Smith_RE_Memory?id=Bczniwskxl4if6pmbml22ge6fsa'
+    amazon: 'http://www.amazon.com/gp/product/B01N04D2Z0'
+
+
+- catalogueNumber: "CBR003a"
+  title: "It's Not Real"
+  artist: "Haszari"
+  cover: "covers/cbr003a.jpg"
+  remixers:
+    - "nsu"
+    - "Aural Trash"
+    - "Snake Charmer"
+    - "Greg Churchill"
+  colours:
+    background: "#051966"
+  listenLinks:
+    spotify: 'https://open.spotify.com/album/63YdghfUuwS4BfIdVTQD9d'
+    appleMusic: 'https://itunes.apple.com/us/album/its-not-real-ep/id1175884694?uo=4&app=music'
+    googlePlay: 'https://play.google.com/store/music/album/Haszari_It_s_Not_Real?id=Bzf73nrzcmcwcpmugbcvd3ys7oi'
+    amazon: 'http://www.amazon.com/gp/product/B01N3RF0T7'
+
+- catalogueNumber: "CBR003b"
+  title: "Neutron Star MMX"
+  artist: "nsu"
+  cover: "covers/cbr003b.jpg"
+  remixers:
+    - "Haszari"
+    - "Aural Trash"
+    - "Snake Charmer"
+    - "Greg Churchill"
+  colours:
+    background: "#f75c21"
+  listenLinks:
+    spotify: 'https://open.spotify.com/album/64BBGrJVJJ68tmiFWj4syz'
+    appleMusic: 'https://itunes.apple.com/us/album/neutron-star-mmx-ep/id1175890606?uo=4&app=music'
+    googlePlay: 'https://play.google.com/store/music/album/Nsu_Neutron_Star_MMX?id=Bnhg26amosrjlooi4v2ide72yyq'
+    amazon: 'http://www.amazon.com/gp/product/B01N04D5JD'
+
+- catalogueNumber: "CBR002a"
+  title: "Wii Break"
+  artist: "SoNic Smith"
+  cover: "covers/cbr002a.jpg"
+  remixers:
+    - "Sharkweek"
+    - "Haszari"
+  colours:
+    background: "#5a6a6c"
+  listenLinks:
+    spotify: 'https://open.spotify.com/album/5bxqxWez7DIdd1veKzD4Gs'
+    appleMusic: 'https://itunes.apple.com/us/album/wii-break-single/id1175722432?uo=4&app=music'
+    googlePlay: 'https://play.google.com/store/music/album/SoNic_Smith_Wii_Break?id=B7ihu273t2bcehay5ery55m2ery'
+    amazon: 'http://www.amazon.com/gp/product/B01MQHLRIJ'
+
+- catalogueNumber: "CBR002b"
+  title: "Small Firm Peppermints"
+  artist: "Sharkweek"
+  cover: "covers/cbr002b.jpg"
+  remixers:
+    - "SoNic Smith"
+    - "Haszari"
+  colours:
+    background: "#f00001"
+  listenLinks:
+    spotify: 'https://open.spotify.com/album/6qelxqzkMKEE15USaPdKel'
+    appleMusic: 'https://itunes.apple.com/us/album/small-firm-peppermints-single/id1175777746?uo=4&app=music'
+    googlePlay: 'https://play.google.com/store/music/album/Sharkweek_Small_Firm_Peppermints?id=Bewjsvqgm5kfvigglgwunbynxim'
+    amazon: 'http://www.amazon.com/gp/product/B01MYLH0I4'
+
+
+- catalogueNumber: "CBR001a"
+  title: "Ladies Style"
+  artist: "SoNic Smith"
+  cover: "covers/cbr001a.jpg"
+  remixers:
+    - "Haszari"
+    - "Stray Theories"
+  colours:
+    background: "#88568b"
+  listenLinks:
+    spotify: 'https://open.spotify.com/album/6MAwIp8gXcCYGc8tfDXFzH'
+    appleMusic: '' # not there yet!! WHAT!
+    googlePlay: 'https://play.google.com/store/music/album/SoNic_Smith_Ladies_Style?id=Bzuwhfurnv7b2bwxm2rzkmroazq'
+    amazon: 'http://www.amazon.com/gp/product/B01MTM2XGC'
+
+- catalogueNumber: "CBR001b"
+  title: "The Jacket"
+  artist: "Haszari"
+  cover: "covers/cbr001b.jpg"
+  remixers:
+    - "SoNic Smith"
+    - "Stray Theories"
+  colours:
+    background: "#5e2204"
+  listenLinks:
+    spotify: 'https://open.spotify.com/album/62C7AEVpYoDBvW815KwQRp'
+    appleMusic: 'https://itunes.apple.com/us/album/the-jacket-ep/id1175874775?uo=4&app=music'
+    googlePlay: 'https://play.google.com/store/music/album/Haszari_The_Jacket?id=Bnyfr4dkhlf75bauw6olebfrmca'
+    amazon: 'http://www.amazon.com/gp/product/B01N3N9AOS'
+ 
