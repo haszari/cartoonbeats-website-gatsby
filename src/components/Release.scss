@@ -1,0 +1,20 @@
+.Release {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 1em;
+
+  .Release-info {
+    text-align: right;
+    margin: 1em;
+    width: 30%;
+  };
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+
+    .Release-info {
+      text-align: left;
+    }
+  }
+}
