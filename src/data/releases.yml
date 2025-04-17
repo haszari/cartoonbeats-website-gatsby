@@ -42,6 +42,19 @@
     soundcloud: "https://soundcloud.com/haszari/parkplatz-schlurfen"
     beatport: ""
 
+- catalogueNumber: "CBR015"
+  artist: "Haszari + Kathia Rudametkin"
+  title: "Sinking Galley"
+  cover: "covers/cbr015.jpg"
+  listenLinks: 
+    bandcamp: "https://haszari.bandcamp.com/album/sinking-galley"
+    apple: "https://music.apple.com/nz/album/sinking-galley-single/1738027420"
+    spotify: "https://open.spotify.com/album/7E6THW1fuTtlbKVyFiB4nR"
+    beatport: ""
+    soundcloud: "https://soundcloud.com/haszari/sets/sinking-galley"
+    youtube: "https://www.youtube.com/playlist?list=OLAK5uy_l0dMdedamavdwNSF3LwvF5fa5ipFSWgJw"
+
+
 # - catalogueNumber: "CBRXXX"
 #   artist: "Haszari"
 #   title: "XXXX"
