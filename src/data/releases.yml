@@ -53,6 +53,17 @@
     beatport: ""
     soundcloud: "https://soundcloud.com/haszari/sets/sinking-galley"
     youtube: "https://www.youtube.com/playlist?list=OLAK5uy_l0dMdedamavdwNSF3LwvF5fa5ipFSWgJw"
+- catalogueNumber: "CBR013"
+  artist: "Haszari"
+  title: "Mivova"
+  cover: "covers/cbr013.jpg"
+  listenLinks: 
+    bandcamp: "https://haszari.bandcamp.com/track/mivova"
+    spotify: "https://open.spotify.com/track/1LT74dnJv99LnD4imbfiun"
+    beatport: ""
+    soundcloud: "https://soundcloud.com/haszari/mivova"
+    apple: "https://music.apple.com/nz/album/mivova/1726131737"
+    youtube: "https://www.youtube.com/watch?v=kLNKjf87-XQ"
 
 
 # - catalogueNumber: "CBRXXX"
