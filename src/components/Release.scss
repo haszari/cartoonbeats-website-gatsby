@@ -8,6 +8,15 @@
     text-align: right;
     margin: 1em;
     width: 30%;
+
+    .Release-info-title {
+      font-size: 140%;
+      font-weight: bold;
+    }
+    
+    .Release-info-artist {
+      font-size: 120%;
+    }    
   };
 
   &:nth-child(even) {
