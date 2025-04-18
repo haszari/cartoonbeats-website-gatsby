@@ -15,6 +15,7 @@ function ReleaseList({ releases }) {
       coverImage={releaseInfo.image} 
       title={releaseInfo.title}
       artist={releaseInfo.artist}
+      listenLinks={releaseInfo.listenLinks}
     />
   ));
 

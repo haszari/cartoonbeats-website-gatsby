@@ -1,0 +1,28 @@
+.ListenLinks {
+  margin-top: 0.5em;
+  font-size: 120%;
+  // font-size: 200%;
+  // line-height: 200%;
+  // font-variant: small-caps;
+  // font-style: italic;
+
+  // Space fontello icons out a little more.
+  a span::before {
+    margin: 0 0.3em;
+  }
+
+  // Zero the fontello-provided icon margin so it aligns nicely.
+  // This is a bit messy.
+  a:first-child  span::before {
+    margin-left: 0;
+  }
+  a:last-child span::before  {
+    margin-right: 0;
+  }
+
+  // Amazon icon is not properly aligned IMO.
+  .icon-amazon {
+    position: relative;
+    top: 2px;
+  }
+}

@@ -7,6 +7,7 @@ import { getImage } from "gatsby-plugin-image"
 import ReleaseList from '../patterns/ReleaseList';
 
 import "./index.scss"
+import "../fontello/css/fontawesome-musicstores.css"
 
 const MainPage = ({data}) => {
   const imageFiles = data.allFile.nodes;
@@ -44,6 +45,15 @@ export const query = graphql`{
       artist
       title
       cover
+      listenLinks {
+        bandcamp
+        apple
+        youtube
+        spotify
+        amazon
+        beatport
+        soundcloud
+      }
     }
   }
   allFile(filter: {sourceInstanceName: {eq: "images"}}) {
