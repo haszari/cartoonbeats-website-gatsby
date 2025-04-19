@@ -55,6 +55,12 @@
       "search": [
         "beatport"
       ]
+    },
+    {
+      "uid": "c7715df42d0413b3cae83d4bc3943a3e",
+      "css": "soundcloud",
+      "code": 61577,
+      "src": "mfglabs"
     }
   ]
 }
