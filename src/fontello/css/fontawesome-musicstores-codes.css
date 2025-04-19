@@ -1,5 +1,8 @@
 
+.icon-beatport:before { content: '\e800'; } /* '' */
+.icon-youtube:before { content: '\f16a'; } /* '' */
 .icon-apple:before { content: '\f179'; } /* '' */
 .icon-google:before { content: '\f1a0'; } /* '' */
 .icon-spotify:before { content: '\f1bc'; } /* '' */
 .icon-amazon:before { content: '\f270'; } /* '' */
+.icon-bandcamp:before { content: '\f32b'; } /* '' */
