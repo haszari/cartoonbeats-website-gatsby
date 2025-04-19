@@ -9,6 +9,8 @@
   // We have labels so the icons make more sense in screen readers (ESLint warning).
   // Hide them so we get "logo-only" look.
   // This might hide them from screen readers though.
+  // Yep confirmed: https://www.a11yproject.com/posts/how-to-hide-content/
+  // TODO hide this more responsibly or find a better way to add a reader-only label.
   label {
     display: none;
   }
