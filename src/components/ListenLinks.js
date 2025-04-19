@@ -6,7 +6,10 @@ import "./ListenLinks.scss"
 // store - one of beatport, spotify, apple, amazon, youtube, bandcamp, 
 // TODO enforce this with TypeScript?
 function ListenIcon({ store, url }) {
-  return (<a href={url}><span className={`icon-${store}`}></span></a>);
+  return (<a href={url}>
+    <span className={`icon-${store}`}></span>
+    <label>listen on {store}</label>
+  </a>);
 }
 
 function ListenLinks({ links }) {

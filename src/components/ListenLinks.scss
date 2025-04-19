@@ -6,6 +6,12 @@
   // font-variant: small-caps;
   // font-style: italic;
 
+  // We have labels so the icons make more sense in screen readers (ESLint warning).
+  // Hide them so we get "logo-only" look.
+  // This might hide them from screen readers though.
+  label {
+    display: none;
+  }
   // Space fontello icons out a little more.
   a span::before {
     margin: 0 0.3em;
@@ -24,5 +30,11 @@
   .icon-amazon {
     position: relative;
     top: 2px;
+  }
+
+  // Bandcamp icon also needs a lil nudge down.
+  .icon-bandcamp {
+    position: relative;
+    top: 1px;
   }
 }
