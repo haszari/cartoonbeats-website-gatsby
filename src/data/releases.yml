@@ -30,6 +30,7 @@
     youtube: ""
     beatport: "https://www.beatport.com/release/gumdrop/4668330"
     soundcloud: "https://soundcloud.com/haszari/gumdrop"
+
 - catalogueNumber: "CBR016"
   artist: "Haszari"
   title: "Parkplatz-Schlurfen"
@@ -53,6 +54,19 @@
     beatport: ""
     soundcloud: "https://soundcloud.com/haszari/sets/sinking-galley"
     youtube: "https://www.youtube.com/playlist?list=OLAK5uy_l0dMdedamavdwNSF3LwvF5fa5ipFSWgJw"
+
+- catalogueNumber: "CBR015b"
+  artist: "Haszari + Kathia Rudametkin"
+  title: "Sinking Galley (Foison remix)"
+  cover: "covers/cbr015b.jpg"
+  listenLinks: 
+    bandcamp: ""
+    apple: ""
+    spotify: ""
+    beatport: "https://www.beatport.com/release/sinking-galley-foison-remix/4916728"
+    soundcloud: ""
+    youtube: ""
+
 - catalogueNumber: "CBR014"
   artist: "MÖM"
   title: "Circles (Haszari remix)"
@@ -85,10 +99,11 @@
   listenLinks: 
     bandcamp: ""
     spotify: ""
-    beatport: ""
+    beatport: "https://www.beatport.com/release/sumiyoshi/4675507"
     soundcloud: ""
     apple: ""
     youtube: "https://youtube.com/playlist?list=OLAK5uy_lCYqnXPKIplrrJd7HRQPO5SidUFDf924M&si=u9isiy1EpqqzeyMz"
+
 - catalogueNumber: "CBR010"
   artist: "Haszari"
   title: "Like So"
@@ -100,6 +115,7 @@
     soundcloud: ""
     apple: ""
     youtube: "https://youtube.com/playlist?list=OLAK5uy_k4VMckd4D4kZ7l26Da8PRhpAfHkJzW3FE"
+
 - catalogueNumber: "CBR009"
   artist: "Haszari"
   title: "Foundation Slab"
@@ -112,7 +128,6 @@
     apple: ""
     youtube: "https://youtube.com/playlist?list=OLAK5uy_n1Yg3g28nxfywGzHEEwDoI_wz3UziIqsU"
 
-
 - catalogueNumber: "CBR008"
   artist: "Haszari"
   title: "Redline Train"
@@ -120,7 +135,7 @@
   listenLinks: 
     bandcamp: ""
     spotify: ""
-    beatport: ""
+    beatport: https://www.beatport.com/release/redline-train/4675503"
     soundcloud: ""
     apple: ""
     youtube: "https://youtube.com/playlist?list=OLAK5uy_lKMJsc62Cs91gNdw9SEDqwhvrFKc0AZrc"
@@ -146,7 +161,7 @@
   listenLinks: 
     bandcamp: ""
     spotify: ""
-    beatport: ""
+    beatport: "https://www.beatport.com/release/other-people-are-having-breakfast/4704688"
     soundcloud: ""
     apple: ""
     youtube: "https://youtube.com/playlist?list=OLAK5uy_lGmLcDJ_AvEUEAi-RIN-cT48vEnfRYeko"
@@ -165,6 +180,7 @@
     apple: 'https://geo.itunes.apple.com/us/album/fuzzy-motion-single/id1200706497?mt=1&app=music'
     youtube: 'https://youtube.com/playlist?list=OLAK5uy_m9ZAeSClLxKcTKaRreJc9hxY5_mNo9EOY'
     amazon: 'https://www.amazon.com/Fuzzy-Motion-Nikolozi/dp/B01N16H5TX'
+    beatport: 'https://www.beatport.com/release/fuzzy-motion/4707419'
 
 
 - catalogueNumber: "CBR005b"
@@ -181,6 +197,7 @@
     apple: 'https://itunes.apple.com/us/album/padded-cell-single/id1200706796?uo=4&app=music&at=1001lry3'
     youtube: 'https://youtube.com/playlist?list=OLAK5uy_mEqyLRJCUIDDaJq9LIQwVFhB9ofXE3puQ'
     amazon: 'http://www.amazon.com/gp/product/B01NAYTDLW'
+    beatport: 'https://www.beatport.com/release/padded-cell/4704690'
 
 - catalogueNumber: "CBR004a"
   title: "Blood Orange"
@@ -196,6 +213,7 @@
      apple: 'https://itunes.apple.com/us/album/blood-orange-ep/id1175893872?uo=4&app=music'
      youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_mkRzWGa5ArL3yG0-QHYrljvJYhi1PJYDs'
      amazon: 'http://www.amazon.com/gp/product/B01MYLP58L'
+     beatport: 'https://www.beatport.com/release/blood-orange/4720098'
 
 - catalogueNumber: "CBR004b"
   title: "RE: Memory"
@@ -211,7 +229,7 @@
     apple: 'https://itunes.apple.com/us/album/re-memory-single/id1175897729?uo=4&app=music'
     youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_k69kCfaYUp5OTpXIvl874hB85a7dbtlgU'
     amazon: 'http://www.amazon.com/gp/product/B01N04D2Z0'
-
+    beatport: 'https://www.beatport.com/release/re-memory/4707409'
 
 - catalogueNumber: "CBR003a"
   title: "It's Not Real"
@@ -229,6 +247,7 @@
     apple: 'https://itunes.apple.com/us/album/its-not-real-ep/id1175884694?uo=4&app=music'
     youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_lQVDJ9dTt3lP5rMiC-q_K9UQB-2LvN-_s'
     amazon: 'http://www.amazon.com/gp/product/B01N3RF0T7'
+    beatport: https://www.beatport.com/release/its-not-real/4760875
 
 - catalogueNumber: "CBR003b"
   title: "Neutron Star MMX"
@@ -246,6 +265,7 @@
     apple: 'https://itunes.apple.com/us/album/neutron-star-mmx-ep/id1175890606?uo=4&app=music'
     youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_mBLjBfGiguaUtUwJAA5uxvxEIQQk9CWJU'
     amazon: 'http://www.amazon.com/gp/product/B01N04D5JD'
+    beatport: https://www.beatport.com/release/neutron-star-mmx/4756558
 
 - catalogueNumber: "CBR002a"
   title: "Wii Break"
@@ -261,6 +281,7 @@
     apple: 'https://itunes.apple.com/us/album/wii-break-single/id1175722432?uo=4&app=music'
     youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_n_v0skUHSjYtEKqmUZzwcO4iIdtMSyUL8'
     amazon: 'http://www.amazon.com/gp/product/B01MQHLRIJ'
+    beatport: https://www.beatport.com/release/wii-break/4760872
 
 - catalogueNumber: "CBR002b"
   title: "Small Firm Peppermints"
@@ -292,6 +313,7 @@
     apple: '' # not there yet!! WHAT!
     youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_kcG2aUBh7dFlAJTerwL7C9u1tOgEQ8Sfw'
     amazon: 'http://www.amazon.com/gp/product/B01MTM2XGC'
+    beatport: https://www.beatport.com/release/ladies-style/4812352
 
 - catalogueNumber: "CBR001b"
   title: "The Jacket"
@@ -308,4 +330,5 @@
     apple: 'https://itunes.apple.com/us/album/the-jacket-ep/id1175874775?uo=4&app=music'
     youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_kdQT1z0kS2d2dVa1M-pCZb9On0-tKj9oA'
     amazon: 'http://www.amazon.com/gp/product/B01N3N9AOS'
+    beatport: https://www.beatport.com/release/the-jacket/4786081
  
