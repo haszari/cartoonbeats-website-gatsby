@@ -63,9 +63,9 @@
   cover: "covers/cbr015b.jpg"
   listenLinks:
     bandcamp: ""
-    apple: "https://music.apple.com/nz/album/sinking-galley-foison-remix-single/1793414532"
-    spotify: ""
-    beatport: "https://www.beatport.com/release/sinking-galley-foison-remix/4916728"
+    apple: https://music.apple.com/nz/album/sinking-galley-foison-remix-single/1793414532
+    spotify: https://open.spotify.com/album/4vcNmPIPjpG0GqsO8IvmXS
+    beatport: https://www.beatport.com/release/sinking-galley-foison-remix/4916728
     soundcloud: ""
     youtube: ""
 
@@ -100,8 +100,8 @@
   cover: "covers/cbr011.jpg"
   listenLinks:
     bandcamp: ""
-    spotify: ""
-    beatport: "https://www.beatport.com/release/sumiyoshi/4675507"
+    spotify: https://open.spotify.com/album/1T8BcpycDs3G3m9o2YFxBt
+    beatport: https://www.beatport.com/release/sumiyoshi/4675507
     soundcloud: ""
     apple: https://music.apple.com/nz/album/sumiyoshi-ep/1760394720
     youtube: "https://youtube.com/playlist?list=OLAK5uy_lCYqnXPKIplrrJd7HRQPO5SidUFDf924M&si=u9isiy1EpqqzeyMz"
@@ -111,9 +111,9 @@
   title: "Like So"
   cover: "covers/cbr010.jpg"
   listenLinks:
-    bandcamp: "https://haszari.bandcamp.com/album/like-so-2"
+    bandcamp: https://haszari.bandcamp.com/album/like-so-2
     apple: https://music.apple.com/nz/album/like-so-ep/1735285069
-    spotify: ""
+    spotify: https://open.spotify.com/album/0FLrP3bllGVrraM3rLhrNW
     beatport: ""
     soundcloud: ""
     youtube: "https://youtube.com/playlist?list=OLAK5uy_k4VMckd4D4kZ7l26Da8PRhpAfHkJzW3FE"
@@ -124,11 +124,11 @@
   cover: "covers/cbr009.jpg"
   listenLinks:
     bandcamp: ""
-    spotify: ""
+    spotify: https://open.spotify.com/album/69lOXg1ZpgQcaMvyWBlbT7
+    apple: https://music.apple.com/nz/album/foundation-slab-ep/1726749663
+    youtube: https://youtube.com/playlist?list=OLAK5uy_n1Yg3g28nxfywGzHEEwDoI_wz3UziIqsU
     beatport: ""
     soundcloud: ""
-    apple: https://music.apple.com/nz/album/foundation-slab-ep/1726749663
-    youtube: "https://youtube.com/playlist?list=OLAK5uy_n1Yg3g28nxfywGzHEEwDoI_wz3UziIqsU"
 
 - catalogueNumber: "CBR008"
   artist: "Haszari"
@@ -136,11 +136,11 @@
   cover: "covers/cbr008.jpg"
   listenLinks:
     bandcamp: ""
-    spotify: ""
+    spotify: https://open.spotify.com/album/2BYP241jHsFNjUdnw7vc8i
     beatport: https://www.beatport.com/release/redline-train/4675503"
     soundcloud: ""
     apple: https://music.apple.com/nz/album/redline-train-ep/1760398672
-    youtube: "https://youtube.com/playlist?list=OLAK5uy_lKMJsc62Cs91gNdw9SEDqwhvrFKc0AZrc"
+    youtube: https://youtube.com/playlist?list=OLAK5uy_lKMJsc62Cs91gNdw9SEDqwhvrFKc0AZrc
 
 - catalogueNumber: "CBR007"
   artist: "Haszari"
@@ -148,33 +148,33 @@
   cover: "covers/cbr007.jpg"
   listenLinks:
     bandcamp:
-    spotify:
+    spotify: https://open.spotify.com/album/2G1FNR11Vw2LBILc67LsIS
     beatport:
     soundcloud:
     apple: https://music.apple.com/nz/album/eggs-for-tea-single/1708819054
-    youtube: "https://youtube.com/playlist?list=OLAK5uy_mBCthYPhvPm3Hxn5kjBJdYPGh7r6BLfG4"
+    youtube: https://youtube.com/playlist?list=OLAK5uy_mBCthYPhvPm3Hxn5kjBJdYPGh7r6BLfG4
 
 - catalogueNumber: "CBR006"
   artist: "Haszari"
   title: "Other People Are Having Breakfast"
   cover: "covers/cbr006.jpg"
   remixers:
-    - "Espionage"
+  - "Espionage"
   listenLinks:
     bandcamp:
-    spotify:
-    beatport: "https://www.beatport.com/release/other-people-are-having-breakfast/4704688"
+    spotify: https://open.spotify.com/album/5f5oj0sO5R21JXFrkj6FbI
+    beatport: https://www.beatport.com/release/other-people-are-having-breakfast/4704688
     soundcloud:
     apple: https://music.apple.com/nz/album/other-people-are-having-breakfast-single/1759495645
-    youtube: "https://youtube.com/playlist?list=OLAK5uy_lGmLcDJ_AvEUEAi-RIN-cT48vEnfRYeko"
+    youtube: https://youtube.com/playlist?list=OLAK5uy_lGmLcDJ_AvEUEAi-RIN-cT48vEnfRYeko
 
 - catalogueNumber: "CBR005a"
   title: "Fuzzy Motion"
   artist: "Nikolozi"
   cover: "covers/cbr005a.jpg"
   remixers:
-    - "Haszari"
-    - "nsu"
+  - "Haszari"
+  - "nsu"
   colours:
     background: "#33002e"
   listenLinks:
@@ -189,8 +189,8 @@
   artist: "Haszari"
   cover: "covers/cbr005b.jpg"
   remixers:
-    - "Nikolozi"
-    - "nsu"
+  - "Nikolozi"
+  - "nsu"
   colours:
     background: "#c61647"
   listenLinks:
@@ -205,8 +205,8 @@
   artist: "Haszari"
   cover: "covers/cbr004a.jpg"
   remixers:
-    - "SoNic Smith"
-    - "nsu"
+  - "SoNic Smith"
+  - "nsu"
   colours:
     background: "#e3001c"
   listenLinks:
@@ -221,8 +221,8 @@
   artist: "SoNic Smith"
   cover: "covers/cbr004b.jpg"
   remixers:
-    - "Haszari"
-    - "nsu"
+  - "Haszari"
+  - "nsu"
   colours:
     background: "#89000d"
   listenLinks:
@@ -237,10 +237,10 @@
   artist: "Haszari"
   cover: "covers/cbr003a.jpg"
   remixers:
-    - "nsu"
-    - "Aural Trash"
-    - "Snake Charmer"
-    - "Greg Churchill"
+  - "nsu"
+  - "Aural Trash"
+  - "Snake Charmer"
+  - "Greg Churchill"
   colours:
     background: "#051966"
   listenLinks:
@@ -255,10 +255,10 @@
   artist: "nsu"
   cover: "covers/cbr003b.jpg"
   remixers:
-    - "Haszari"
-    - "Aural Trash"
-    - "Snake Charmer"
-    - "Greg Churchill"
+  - "Haszari"
+  - "Aural Trash"
+  - "Snake Charmer"
+  - "Greg Churchill"
   colours:
     background: "#f75c21"
   listenLinks:
@@ -273,8 +273,8 @@
   artist: "SoNic Smith"
   cover: "covers/cbr002a.jpg"
   remixers:
-    - "Sharkweek"
-    - "Haszari"
+  - "Sharkweek"
+  - "Haszari"
   colours:
     background: "#5a6a6c"
   listenLinks:
@@ -289,8 +289,8 @@
   artist: "Sharkweek"
   cover: "covers/cbr002b.jpg"
   remixers:
-    - "SoNic Smith"
-    - "Haszari"
+  - "SoNic Smith"
+  - "Haszari"
   colours:
     background: "#f00001"
   listenLinks:
@@ -304,13 +304,13 @@
   artist: "SoNic Smith"
   cover: "covers/cbr001a.jpg"
   remixers:
-    - "Haszari"
-    - "Stray Theories"
+  - "Haszari"
+  - "Stray Theories"
   colours:
     background: "#88568b"
   listenLinks:
     spotify: "https://open.spotify.com/album/6MAwIp8gXcCYGc8tfDXFzH"
-    apple: "" # not there yet!! WHAT!
+    apple: ""  # Ladies Style is MIA on apple?
     youtube: "https://www.youtube.com/playlist?list=OLAK5uy_kcG2aUBh7dFlAJTerwL7C9u1tOgEQ8Sfw"
     amazon: "http://www.amazon.com/gp/product/B01MTM2XGC"
     beatport: https://www.beatport.com/release/ladies-style/4812352
@@ -320,8 +320,8 @@
   artist: "Haszari"
   cover: "covers/cbr001b.jpg"
   remixers:
-    - "SoNic Smith"
-    - "Stray Theories"
+  - "SoNic Smith"
+  - "Stray Theories"
   colours:
     background: "#5e2204"
   listenLinks:
