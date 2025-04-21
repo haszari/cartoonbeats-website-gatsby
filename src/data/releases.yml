@@ -88,7 +88,7 @@
     beatport: ""
     soundcloud: ""
     apple: ""
-    youtube: ""
+    youtube: "https://youtube.com/playlist?list=OLAK5uy_lCYqnXPKIplrrJd7HRQPO5SidUFDf924M&si=u9isiy1EpqqzeyMz"
 - catalogueNumber: "CBR010"
   artist: "Haszari"
   title: "Like So"
@@ -99,7 +99,7 @@
     beatport: ""
     soundcloud: ""
     apple: ""
-    youtube: ""
+    youtube: "https://youtube.com/playlist?list=OLAK5uy_k4VMckd4D4kZ7l26Da8PRhpAfHkJzW3FE"
 - catalogueNumber: "CBR009"
   artist: "Haszari"
   title: "Foundation Slab"
@@ -110,7 +110,7 @@
     beatport: ""
     soundcloud: ""
     apple: ""
-    youtube: ""
+    youtube: "https://youtube.com/playlist?list=OLAK5uy_n1Yg3g28nxfywGzHEEwDoI_wz3UziIqsU"
 
 
 - catalogueNumber: "CBR008"
@@ -123,7 +123,8 @@
     beatport: ""
     soundcloud: ""
     apple: ""
-    youtube: ""
+    youtube: "https://youtube.com/playlist?list=OLAK5uy_lKMJsc62Cs91gNdw9SEDqwhvrFKc0AZrc"
+
 - catalogueNumber: "CBR007"
   artist: "Haszari"
   title: "Eggs For Tea"
@@ -134,21 +135,21 @@
     beatport: ""
     soundcloud: ""
     apple: ""
-    youtube: ""
+    youtube: "https://youtube.com/playlist?list=OLAK5uy_mBCthYPhvPm3Hxn5kjBJdYPGh7r6BLfG4"
+
 - catalogueNumber: "CBR006"
   artist: "Haszari"
   title: "Other People Are Having Breakfast"
   cover: "covers/cbr006.jpg"
+  remixers:
+    - "Espionage"
   listenLinks: 
     bandcamp: ""
     spotify: ""
     beatport: ""
     soundcloud: ""
     apple: ""
-    youtube: ""
-
-
-
+    youtube: "https://youtube.com/playlist?list=OLAK5uy_lGmLcDJ_AvEUEAi-RIN-cT48vEnfRYeko"
 
 - catalogueNumber: "CBR005a"
   title: "Fuzzy Motion"
@@ -162,7 +163,7 @@
   listenLinks:
     spotify: 'https://open.spotify.com/album/6fysfToZ3QcK3NF4WPiUYE'
     apple: 'https://geo.itunes.apple.com/us/album/fuzzy-motion-single/id1200706497?mt=1&app=music'
-    googlePlay: 'https://play.google.com/music/m/Bbfw7wqqvihttjhx7dlcb5v3nzq?t=Fuzzy_Motion_-_Nikolozi'
+    youtube: 'https://youtube.com/playlist?list=OLAK5uy_m9ZAeSClLxKcTKaRreJc9hxY5_mNo9EOY'
     amazon: 'https://www.amazon.com/Fuzzy-Motion-Nikolozi/dp/B01N16H5TX'
 
 
@@ -178,9 +179,8 @@
   listenLinks:
     spotify: 'https://open.spotify.com/album/3nZK807I6PZI3DVymT35vl'
     apple: 'https://itunes.apple.com/us/album/padded-cell-single/id1200706796?uo=4&app=music&at=1001lry3'
-    googlePlay: 'https://play.google.com/store/music/album/Haszari_Padded_Cell?id=Bbvjyhs2lmgwfmqktqlvpkajc2q'
+    youtube: 'https://youtube.com/playlist?list=OLAK5uy_mEqyLRJCUIDDaJq9LIQwVFhB9ofXE3puQ'
     amazon: 'http://www.amazon.com/gp/product/B01NAYTDLW'
-
 
 - catalogueNumber: "CBR004a"
   title: "Blood Orange"
@@ -194,7 +194,7 @@
   listenLinks:
      spotify: 'https://open.spotify.com/album/2Jfysi3ktit9ZIdyFDuY7d'
      apple: 'https://itunes.apple.com/us/album/blood-orange-ep/id1175893872?uo=4&app=music'
-     googlePlay: 'https://play.google.com/store/music/album/Haszari_Blood_Orange?id=Bjeswdu6uiqdbz6mhiq5p6wtj2i'
+     youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_mkRzWGa5ArL3yG0-QHYrljvJYhi1PJYDs'
      amazon: 'http://www.amazon.com/gp/product/B01MYLP58L'
 
 - catalogueNumber: "CBR004b"
@@ -209,7 +209,7 @@
   listenLinks:
     spotify: 'https://open.spotify.com/album/1sK6Pni3PhF6iTjxzC9WMK'
     apple: 'https://itunes.apple.com/us/album/re-memory-single/id1175897729?uo=4&app=music'
-    googlePlay: 'https://play.google.com/store/music/album/SoNic_Smith_RE_Memory?id=Bczniwskxl4if6pmbml22ge6fsa'
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_k69kCfaYUp5OTpXIvl874hB85a7dbtlgU'
     amazon: 'http://www.amazon.com/gp/product/B01N04D2Z0'
 
 
@@ -227,7 +227,7 @@
   listenLinks:
     spotify: 'https://open.spotify.com/album/63YdghfUuwS4BfIdVTQD9d'
     apple: 'https://itunes.apple.com/us/album/its-not-real-ep/id1175884694?uo=4&app=music'
-    googlePlay: 'https://play.google.com/store/music/album/Haszari_It_s_Not_Real?id=Bzf73nrzcmcwcpmugbcvd3ys7oi'
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_lQVDJ9dTt3lP5rMiC-q_K9UQB-2LvN-_s'
     amazon: 'http://www.amazon.com/gp/product/B01N3RF0T7'
 
 - catalogueNumber: "CBR003b"
@@ -244,7 +244,7 @@
   listenLinks:
     spotify: 'https://open.spotify.com/album/64BBGrJVJJ68tmiFWj4syz'
     apple: 'https://itunes.apple.com/us/album/neutron-star-mmx-ep/id1175890606?uo=4&app=music'
-    googlePlay: 'https://play.google.com/store/music/album/Nsu_Neutron_Star_MMX?id=Bnhg26amosrjlooi4v2ide72yyq'
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_mBLjBfGiguaUtUwJAA5uxvxEIQQk9CWJU'
     amazon: 'http://www.amazon.com/gp/product/B01N04D5JD'
 
 - catalogueNumber: "CBR002a"
@@ -259,7 +259,7 @@
   listenLinks:
     spotify: 'https://open.spotify.com/album/5bxqxWez7DIdd1veKzD4Gs'
     apple: 'https://itunes.apple.com/us/album/wii-break-single/id1175722432?uo=4&app=music'
-    googlePlay: 'https://play.google.com/store/music/album/SoNic_Smith_Wii_Break?id=B7ihu273t2bcehay5ery55m2ery'
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_n_v0skUHSjYtEKqmUZzwcO4iIdtMSyUL8'
     amazon: 'http://www.amazon.com/gp/product/B01MQHLRIJ'
 
 - catalogueNumber: "CBR002b"
@@ -274,7 +274,7 @@
   listenLinks:
     spotify: 'https://open.spotify.com/album/6qelxqzkMKEE15USaPdKel'
     apple: 'https://itunes.apple.com/us/album/small-firm-peppermints-single/id1175777746?uo=4&app=music'
-    googlePlay: 'https://play.google.com/store/music/album/Sharkweek_Small_Firm_Peppermints?id=Bewjsvqgm5kfvigglgwunbynxim'
+    youtube: 'https://youtube.com/playlist?list=OLAK5uy_kvnNMWEKBpj1tiSNx5ugy0rfnj5Fxfpp8&si=8YzXjsHDyUVGiEcn'
     amazon: 'http://www.amazon.com/gp/product/B01MYLH0I4'
 
 
@@ -290,7 +290,7 @@
   listenLinks:
     spotify: 'https://open.spotify.com/album/6MAwIp8gXcCYGc8tfDXFzH'
     apple: '' # not there yet!! WHAT!
-    googlePlay: 'https://play.google.com/store/music/album/SoNic_Smith_Ladies_Style?id=Bzuwhfurnv7b2bwxm2rzkmroazq'
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_kcG2aUBh7dFlAJTerwL7C9u1tOgEQ8Sfw'
     amazon: 'http://www.amazon.com/gp/product/B01MTM2XGC'
 
 - catalogueNumber: "CBR001b"
@@ -303,8 +303,9 @@
   colours:
     background: "#5e2204"
   listenLinks:
+    bandcamp: 
     spotify: 'https://open.spotify.com/album/62C7AEVpYoDBvW815KwQRp'
     apple: 'https://itunes.apple.com/us/album/the-jacket-ep/id1175874775?uo=4&app=music'
-    googlePlay: 'https://play.google.com/store/music/album/Haszari_The_Jacket?id=Bnyfr4dkhlf75bauw6olebfrmca'
+    youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_kdQT1z0kS2d2dVa1M-pCZb9On0-tKj9oA'
     amazon: 'http://www.amazon.com/gp/product/B01N3N9AOS'
  
