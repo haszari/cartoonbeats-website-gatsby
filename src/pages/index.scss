@@ -7,11 +7,14 @@ body {
   font-family: globals.$default-sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: globals.$dark-bg-b;
+  color: globals.$text;
 }
 
 
 a {
-  color: black;
+  color: globals.$link;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer;

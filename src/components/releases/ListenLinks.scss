@@ -1,11 +1,10 @@
+@use '../../pages/_globals.scss';
+
 .ListenLinks {
   margin-top: 0.5em;
   font-size: 120%;
-  // font-size: 200%;
-  // line-height: 200%;
-  // font-variant: small-caps;
-  // font-style: italic;
-
+  color: globals.$link;
+  
   // We have labels so the icons make more sense in screen readers (ESLint warning).
   // Hide them so we get "logo-only" look.
   // This might hide them from screen readers though.

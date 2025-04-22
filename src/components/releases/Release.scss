@@ -8,6 +8,7 @@
   align-items: flex-start;
   justify-content: center;
   padding: 1em 0;
+  color: globals.$text;
 
   .Release-info {
     text-align: right;
@@ -30,10 +31,10 @@
     .Release-info {
       text-align: left;
     }
-    background-color: #666;
+    background-color: globals.$dark-bg-b;
   }
 
   &:nth-child(odd) {
-    background-color: #888;
+    background-color: globals.$dark-bg-a;
   }
 }
