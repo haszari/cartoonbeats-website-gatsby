@@ -9,6 +9,7 @@ export default function Layout({ siteTitle, children }) {
         <StaticImage
           className="SiteLogo"
           src="../../images/site-logo.png"
+          placeholder="none"
           alt="site logo"
         />
         <div className="SiteTitle">{siteTitle}</div>
