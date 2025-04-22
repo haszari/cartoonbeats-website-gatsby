@@ -1,8 +1,13 @@
+
+@use '../../pages/_globals.scss';
+
 .Release {
+  @include globals.full-width;
+
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin: 1em;
+  padding: 1em 0;
 
   .Release-info {
     text-align: right;
@@ -25,5 +30,10 @@
     .Release-info {
       text-align: left;
     }
+    background-color: #666;
+  }
+
+  &:nth-child(odd) {
+    background-color: #888;
   }
 }

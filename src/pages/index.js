@@ -7,6 +7,7 @@ import { getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import ReleaseList from '../components/releases';
 
+import "./fonts.scss"
 import "./index.scss"
 import "../fontello/css/fontawesome-musicstores.css"
 
