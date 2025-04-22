@@ -3,38 +3,62 @@
 
 .Release {
   @include globals.full-width;
+  position: relative; /* so can position skewed background div */
 
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 1em 0;
-  color: globals.$text;
-
-  .Release-info {
-    text-align: right;
-    margin: 1em;
-    width: 30%;
-
-    .Release-info-title {
-      font-size: 140%;
-      font-weight: bold;
-    }
-    
-    .Release-info-artist {
-      font-size: 120%;
-    }    
-  };
+  .Release-slant {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    // big overhang so don't see gap on wide monitor
+    bottom: -100px;
+    z-index: -1;
+    transform: skewY(-1.5deg);
+  }
+  
+  .Release-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1em 0;
+    color: globals.$text;
+  
+    .Release-info {
+      text-align: right;
+      margin: 1em;
+      width: 30%;
+  
+      .Release-info-title {
+        font-size: 140%;
+        font-weight: bold;
+      }
+      
+      .Release-info-artist {
+        font-size: 120%;
+      }    
+    };
+  }
 
   &:nth-child(even) {
-    flex-direction: row-reverse;
-
-    .Release-info {
-      text-align: left;
+    .Release-slant {
+      background-color: globals.$dark-bg-b;
+      transform: skewY(+1.5deg);    
     }
-    background-color: globals.$dark-bg-b;
+
+    .Release-content {
+      flex-direction: row-reverse;
+  
+      .Release-info {
+        text-align: left;
+      }
+    }
   }
 
   &:nth-child(odd) {
-    background-color: globals.$dark-bg-a;
+    .Release-slant {
+      background-color: globals.$dark-bg-a;
+      transform: skewY(-1.5deg);    
+    }
   }
 }
+
