@@ -1,8 +1,25 @@
+@font-face {
+  font-family: "Hedvig Letters Serif";
+  src: local("Hedvig Letters Serif"),
+    url(../fonts/HedvigLettersSerif-Regular-VariableFont_opsz.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Hedvig Letters Sans";
+  src: local("Hedvig Letters Sans"),
+    url(../fonts/HedvigLettersSans-Regular.ttf) format("truetype");
+}
+
+$default-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$hedvig-serif: 'Hedvig Letters Serif', 'Georgia', serif;
+$hedvig-sans: 'Hedvig Letters Sans', 'Geneva', 'Verdana', sans-serif;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
+  font-family: $default-sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,6 +59,7 @@ $medium: 900px;
   };
 
   .SiteTitle {
+    font-family: 'Hedvig Letters Serif';
     font-size: 2em;
     font-weight: bold;
   }
