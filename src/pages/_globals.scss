@@ -5,6 +5,10 @@ $default-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen'
 $hedvig-serif: 'Hedvig Letters Serif', 'Georgia', serif;
 $hedvig-sans: 'Hedvig Letters Sans', 'Geneva', 'Verdana', sans-serif;
 
+// Responsive breakpoints.
+$small: 450px;
+$medium: 900px;
+
 // Colours.
 $dark-bg-a: #343433;
 $dark-bg-b: #222626;
