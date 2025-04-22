@@ -4,7 +4,8 @@ import * as React from "react"
 import { graphql } from 'gatsby';
 import { getImage } from "gatsby-plugin-image"
 
-import ReleaseList from '../patterns/ReleaseList';
+import Layout from "../components/layout"
+import ReleaseList from '../components/releases';
 
 import "./index.scss"
 import "../fontello/css/fontawesome-musicstores.css"
@@ -24,11 +25,11 @@ const MainPage = ({data}) => {
     });
 
   return (
-    <main>
+    <Layout siteTitle={data.site.siteMetadata.title}>
       <ReleaseList
         releases={releasesWithImages}
       />
-    </main>
+    </Layout>
   )
 }
 
@@ -38,6 +39,11 @@ export const Head = () => <title>Cartoon Beats Reality</title>
 
 
 export const query = graphql`{
+  site {
+    siteMetadata {
+      title
+    }
+  }
   allReleasesYaml {
     nodes {
       id

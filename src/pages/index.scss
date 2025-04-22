@@ -14,3 +14,35 @@ a {
   line-height: inherit;
   cursor: pointer;
 }
+
+$small: 450px;
+$medium: 900px;
+
+.Header, .PageContent {
+  max-width: 400px;
+  margin: auto;
+
+  @media only screen and (min-width: $small) {
+    max-width: calc(100% - 0.5em);
+  }
+
+  @media only screen and (min-width: $medium) {
+    max-width: min( 800px, calc(100% - 1em) );
+  }
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1em 0;
+    
+  .SiteLogo {
+    width: 7em;
+  };
+
+  .SiteTitle {
+    font-size: 2em;
+    font-weight: bold;
+  }
+}

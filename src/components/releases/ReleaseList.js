@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import Release from '../components/Release';
+import Release from './Release';
 
 import "./ReleaseList.scss"
 

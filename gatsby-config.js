@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "Cartoon Beats Reality - lean static gatsby site",
-    siteUrl: "https://www.yourdomain.tld",
+    title: "Cartoon Beats Reality",
+    siteUrl: "https://cartoonbeats.com",
     description: "Abstract electronic beats.",
   },
   plugins: [
