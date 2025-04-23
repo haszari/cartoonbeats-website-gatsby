@@ -44,9 +44,10 @@
     top: 2px;
   }
 
-  // Bandcamp icon also needs a lil nudge down.
-  .icon-bandcamp {
+  // Apple icon can be a bit bigger and higher because the leaf doesn't really affect centre of gravity.
+  .icon-apple {
     position: relative;
-    top: 1px;
+    font-size: 105%;
+    top: -2px;
   }
 }
