@@ -1,9 +1,20 @@
 @use '../../pages/_globals.scss';
 
+// This is a little coupled to .Release, since we're using release children for alternating layout.
+.Release {
+  &:nth-child(odd) .ListenLinks {
+    // When cover image is on right, if links wrap, they should be right-aligned.
+    justify-content: flex-end;
+  }
+}
+
 .ListenLinks {
   margin-top: 0.5em;
   font-size: 120%;
   color: globals.$link;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1em 0.5em;
   
   // We have labels so the icons make more sense in screen readers (ESLint warning).
   // Hide them so we get "logo-only" look.
@@ -13,19 +24,19 @@
   label {
     display: none;
   }
-  // Space fontello icons out a little more.
+  // Reset fontello icon margins (using flex gap instead).
   a span::before {
-    margin: 0 0.3em;
+    margin: 0;
   }
 
   // Zero the fontello-provided icon margin so it aligns nicely.
   // This is a bit messy.
-  a:first-child  span::before {
-    margin-left: 0;
-  }
-  a:last-child span::before  {
-    margin-right: 0;
-  }
+  // a:first-child  span::before {
+  //   margin-left: 0;
+  // }
+  // a:last-child span::before  {
+  //   margin-right: 0;
+  // }
 
   // Amazon icon is not properly aligned IMO.
   .icon-amazon {
