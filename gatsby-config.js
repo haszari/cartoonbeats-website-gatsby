@@ -27,6 +27,14 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-    "gatsby-plugin-sass"
+    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-LTWT2RM827",
+        ]
+      }
+    }
   ],
 };
