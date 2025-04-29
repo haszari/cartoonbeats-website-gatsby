@@ -2,6 +2,10 @@
 
 A sandbox Gatsby project for an electronic music label website.
 
+## Check it out and listen to the music
+- Go here: https://cartoonbeats.com
+- Click the listen icon for your favourite streaming / music service
+
 ### How to 
 
 - `npm run develop` to start Gatsby [hot-reload](https://www.gatsbyjs.com/docs/reference/local-development/fast-refresh/) [dev server](https://www.gatsbyjs.com/docs/conceptual/overview-of-the-gatsby-build-process/)
