@@ -16,6 +16,7 @@ function ReleaseList({ releases }) {
       title={releaseInfo.title}
       artist={releaseInfo.artist}
       listenLinks={releaseInfo.listenLinks}
+      linkToPath={releaseInfo.gatsbyPath}
     />
   ));
 

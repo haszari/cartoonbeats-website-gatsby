@@ -1,4 +1,3 @@
-
 @use '../../pages/_globals.scss';
 
 .Release {
@@ -31,6 +30,8 @@
       .Release-info-title {
         font-size: 140%;
         font-weight: bold;
+        // Reset link color to regular text colour.
+        color: globals.$text;
       }
       
       .Release-info-artist {

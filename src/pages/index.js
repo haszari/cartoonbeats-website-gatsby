@@ -54,6 +54,7 @@ export const query = graphql`{
       title
       cover
       releaseDate
+      gatsbyPath(filePath: "/releases/{releasesYaml.title}")
       listenLinks {
         bandcamp
         apple

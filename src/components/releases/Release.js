@@ -1,5 +1,5 @@
 import * as React from "react"
-
+import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 import ListenLinks from "./ListenLinks"
@@ -7,22 +7,39 @@ import ListenLinks from "./ListenLinks"
 import "./Release.scss"
 
 
-function Release({ title, artist, coverImage, listenLinks }) {
+function Release({ title, artist, coverImage, listenLinks, linkToPath }) {
+  function MaybeLinkToRelease({ children }) {
+    if (! linkToPath) {
+      return children;
+    }
+  
+    return (
+      <Link to={`${linkToPath}`} className="Release-link">
+        {children}
+      </Link>
+    )
+  }
+  
   return (
     <div className="Release">
       <div className="Release-slant"></div>
       <div className="Release-content">
-        <div className="Release-info">
-          <div className="Release-info-title">{title}</div>
-          <div className="Release-info-artist">{artist}</div>
-          <ListenLinks links={listenLinks} />
-        </div>
-        <div className="Release-cover">
-          { coverImage && <GatsbyImage 
-            image={coverImage} 
-            alt={title}
-          /> }
-        </div>
+          <div className="Release-info">
+            <MaybeLinkToRelease> 
+              <div className="Release-info-title">
+                {title}</div>
+            </MaybeLinkToRelease>
+            <div className="Release-info-artist">{artist}</div>
+            <ListenLinks links={listenLinks} />
+          </div>
+          <MaybeLinkToRelease>
+            <div className="Release-cover">
+              { coverImage && <GatsbyImage 
+                image={coverImage} 
+                alt={title}
+              /> }
+            </div>
+          </MaybeLinkToRelease>
       </div>
     </div>
   )

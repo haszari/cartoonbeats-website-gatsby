@@ -16,6 +16,7 @@ const Page = ({data}) => {
   const imageFiles = data.allFile.nodes;
 
   // Find the cover image and convert to a Gatsby image.
+  // Might want to move this to a utility module (pasted from index page).
   const imageNode = imageFiles.find(
     img => img.relativePath === releaseInfo.cover
   );
@@ -31,7 +32,6 @@ const Page = ({data}) => {
         artist={releaseInfo.artist}
         listenLinks={releaseInfo.listenLinks}
       />
-
     </Layout>
   )
 }
