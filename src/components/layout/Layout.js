@@ -17,7 +17,8 @@ export default function Layout({ siteTitle, children }) {
       <div className="PageContent">
         {children}
       </div>
-      {/* Footer soon? */}
+      <div className="Footer">
+      </div>
     </div>
   )
 }
