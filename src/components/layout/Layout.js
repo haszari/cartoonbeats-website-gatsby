@@ -21,6 +21,7 @@ export default function Layout({ siteTitle, children }) {
         {children}
       </div>
       <div className="Footer">
+        <div className="Footer-slant"></div>
       </div>
     </div>
   )
