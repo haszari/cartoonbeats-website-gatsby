@@ -66,3 +66,20 @@ a {
     font-weight: bold;
   }
 }
+
+.Footer {
+  width: 100%;
+  height: 116px;
+  margin-top: 0.2em;
+  border-bottom: #222625 100px solid;
+  box-sizing: border-box;
+
+  .Footer-slant {
+    position: absolute;
+    background: globals.$dark-bg-b;
+    left: 0;
+    right: 0;
+    height: 100px;
+    transform: skewY(1.5deg);
+  }
+}

@@ -1,23 +1,28 @@
 import React from "react"
 
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 export default function Layout({ siteTitle, children }) {
   return (
     <div>
       <div className="Header">
-        <StaticImage
-          className="SiteLogo"
-          src="../../images/site-logo.png"
-          placeholder="none"
-          alt="site logo"
-        />
-        <div className="SiteTitle">{siteTitle}</div>
+        <Link to="/">
+          <StaticImage
+            className="SiteLogo"
+            src="../../images/site-logo.png"
+            placeholder="none"
+            alt="site logo"
+          />
+        </Link>
+          <div className="SiteTitle">{siteTitle}</div>
       </div>
       <div className="PageContent">
         {children}
       </div>
-      {/* Footer soon? */}
+      <div className="Footer">
+        <div className="Footer-slant"></div>
+      </div>
     </div>
   )
 }

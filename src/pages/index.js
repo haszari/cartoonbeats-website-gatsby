@@ -15,7 +15,8 @@ const MainPage = ({data}) => {
   const imageFiles = data.allFile.nodes;
 
   const releasesWithImages = data.allReleasesYaml.nodes
-    .sort((a, b) => (b.catalogueNumber.localeCompare(a.catalogueNumber)))
+    // .sort((a, b) => (b.catalogueNumber.localeCompare(a.catalogueNumber)))
+    .sort((a, b) => (b.releaseDate.localeCompare(a.releaseDate)))
     .map(releaseInfo => {
       const imageNode = imageFiles.find(
         img => img.relativePath === releaseInfo.cover
@@ -52,6 +53,8 @@ export const query = graphql`{
       artist
       title
       cover
+      releaseDate
+      gatsbyPath(filePath: "/releases/{releasesYaml.title}")
       listenLinks {
         bandcamp
         apple
