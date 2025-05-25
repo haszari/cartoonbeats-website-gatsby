@@ -12,7 +12,7 @@ export default function Layout({ siteTitle, children }) {
             className="SiteLogo"
             src="../../images/site-logo.png"
             placeholder="none"
-            alt="cute little mixer logo"
+            alt="mixer logo"
           />
         </Link>
           <div className="SiteTitle">{siteTitle}</div>
