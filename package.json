@@ -12,7 +12,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public --no-history"
+    "manual-deploy-deprecated": "gatsby build && gh-pages -d public --no-history"
   },
   "dependencies": {
     "gatsby": "^5.14.1",
