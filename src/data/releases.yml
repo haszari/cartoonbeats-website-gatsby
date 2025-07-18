@@ -1,5 +1,22 @@
 
 
+- catalogueNumber: "CBR019"
+  artist: "Haszari"
+  title: "Galley Listing"
+  cover: "covers/cbr019.jpg"
+  releaseDate: 2025-06-16
+  listenLinks:
+    soundcloud: https://soundcloud.com/haszari/galley-listing
+    bandcamp: https://haszari.bandcamp.com/album/galley-listing
+    youtube: https://www.youtube.com/watch?v=0w1eabnixOA
+    beatport: https://www.beatport.com/release/galley-listing/5185001
+    spotify: https://open.spotify.com/album/2lErQXsyS9Nfak5HNFxPGW
+    apple: https://music.apple.com/nz/album/galley-listing-single/1827314937
+  blurb:
+    A new riff on Sinking Galley, my ancient undersea collaboration with Kathia Rudametkin. 
+    Galley Listing takes place centuries prior to Sinking Galley – the ship’s in rough seas and about to capsize!
+
+
 - catalogueNumber: "CBR015b"
   artist: "Haszari + Kathia Rudametkin"
   title: "Sinking Galley (Foison remix)"
