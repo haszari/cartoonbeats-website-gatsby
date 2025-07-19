@@ -13,7 +13,7 @@
   a {
     color: globals.$dark-bg-b;
     background-color: globals.$link;
-    padding: 0.2em 0.8em 0.2em 0.4em;
+    padding: 0.35em 0.8em 0.4em 0.3em;
     border-radius: 1em;
   }
 
@@ -30,7 +30,6 @@
   // Apple icon can be a bit bigger and higher because the leaf doesn't really affect centre of gravity.
   .icon-apple {
     position: relative;
-    font-size: 105%;
-    top: -2px;
+    top: -1px;
   }
 }

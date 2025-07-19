@@ -20,9 +20,8 @@ const Page = ({data}) => {
   );
   releaseInfo.image = getImage(imageNode);
 
-
   return (
-    <Layout siteTitle={data.site.siteMetadata.title}>
+    <Layout siteTitle={data.site.siteMetadata.title} smallHeader={true}>
       <VerticalStackRelease
         key={releaseInfo.id}
         coverImage={releaseInfo.image} 

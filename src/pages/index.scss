@@ -20,7 +20,7 @@ a {
   cursor: pointer;
 }
 
-.Header, .PageContent {
+.PageContent {
   max-width: 400px;
   margin: auto;
   font-size: 0.8em;
@@ -53,19 +53,52 @@ a {
 .Header {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1em;
   padding: 1em 1em 0.5em;
     
   .SiteLogo {
-    width: 7em;
+    width: 3em;
   };
-
+  
   .SiteTitle {
     font-family: 'Hedvig Letters Serif';
-    font-size: 2em;
+    font-size: 1.4em;
     font-weight: bold;
   }
+  
+  @media only screen and (min-width: globals.$small) {
+    justify-content: space-evenly;
+    .SiteLogo {
+      width: 7em;
+    };
+    .SiteTitle {
+      font-size: 2em;
+    }
+  }
 }
+
+.Header.Header-small {
+  justify-content: space-between;
+
+  .SiteLogo {
+    width: 2em;
+  };
+  .SiteTitle {
+    font-size: 1em;
+  }
+
+  @media only screen and (min-width: globals.$small) {
+    justify-content: space-evenly;
+    .SiteLogo {
+      width: 3em;
+    };
+    .SiteTitle {
+      font-size: 1.4em;
+    }
+  }
+}
+
 
 .Footer {
   width: 100%;
