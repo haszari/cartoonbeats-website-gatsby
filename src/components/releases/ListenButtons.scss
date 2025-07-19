@@ -9,7 +9,12 @@
   flex-wrap: wrap;
   gap: 0.8em;
   align-items: center;
-  
+
+  font-size: 1.4em;
+  @media only screen and (min-width: globals.$medium) {
+    font-size: 1em;
+  }
+
   a {
     color: globals.$dark-bg-b;
     background-color: globals.$link;
