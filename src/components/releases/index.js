@@ -1,8 +1,10 @@
 import ReleaseList from './ReleaseList';
-import Release from './Release';
+import HomePageSlantRelease from './HomePageSlantRelease';
+import VerticalStackRelease from './VerticalStackRelease';
 
 export {
-  Release
+  HomePageSlantRelease,
+  VerticalStackRelease
 };
 
 export default ReleaseList;

@@ -1,18 +1,12 @@
 @use '../../pages/_globals.scss';
 
-// This is a little coupled to .Release, since we're using release children for alternating layout.
-.Release {
-  &:nth-child(odd) .ListenLinks {
-    // When cover image is on right, if links wrap, they should be right-aligned.
-    justify-content: flex-end;
-  }
-}
 
-.ListenLinks {
+.ListenIcons {
   margin-top: 0.5em;
   font-size: 120%;
   color: globals.$link;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 0.1em 0.5em;
   

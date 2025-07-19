@@ -1,0 +1,15 @@
+@use '../../pages/_globals.scss';
+@use './Release-base.scss';
+
+.Release.VerticalStackRelease {
+  .Release-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .Release-blurb {
+      padding: 1em;
+      text-align: center;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import "./ListenLinks.scss"
+import "./ListenIcons.scss"
 
 // url - listen link for store
 // store - one of beatport, spotify, apple, amazon, youtube, bandcamp, 
@@ -12,17 +12,17 @@ function ListenIcon({ store, url }) {
   </a>);
 }
 
-function ListenLinks({ links }) {
+function ListenIcons({ links }) {
   let listenElements = Object.keys(links).map(store => {
     const url = links[store];
     return (url && <ListenIcon key={store} store={store} url={url} />);
   });
   
   return (
-    <div className="ListenLinks">
+    <div className="ListenIcons">
       {listenElements}
     </div>
   );
 }
 
-export default ListenLinks;
+export default ListenIcons;

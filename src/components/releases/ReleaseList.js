@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import Release from './Release';
+import HomePageSlantRelease from './HomePageSlantRelease';
 
 import "./ReleaseList.scss"
 
@@ -10,7 +10,7 @@ import "./ReleaseList.scss"
 // image
 function ReleaseList({ releases }) {
   const rows = releases.map(( releaseInfo ) => ( 
-    <Release
+    <HomePageSlantRelease
       key={releaseInfo.id}
       coverImage={releaseInfo.image} 
       title={releaseInfo.title}

@@ -1,12 +1,19 @@
 import React from "react"
+import classnames from 'classnames';
 
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
-export default function Layout({ siteTitle, children }) {
+
+export default function Layout({ siteTitle, children, smallHeader = false }) {
+  const headerClasses = classnames([
+    'Header',
+    smallHeader ? 'Header-small' : null,
+  ]);
+
   return (
     <div>
-      <div className="Header">
+      <div className={headerClasses}>
         <Link to="/">
           <StaticImage
             className="SiteLogo"
@@ -15,7 +22,9 @@ export default function Layout({ siteTitle, children }) {
             alt="mixer logo"
           />
         </Link>
+        <Link to="/">
           <div className="SiteTitle">{siteTitle}</div>
+        </Link>
       </div>
       <div className="PageContent">
         {children}

@@ -5,10 +5,8 @@ import { graphql } from 'gatsby';
 import { getImage } from "gatsby-plugin-image"
 
 import Layout from "../../components/layout"
-import { Release } from "../../components/releases"
+import { VerticalStackRelease } from "../../components/releases"
 
-// import "../fonts.scss"
-// import "../index.scss"
 import "../../fontello/css/fontawesome-musicstores.css"
 
 const Page = ({data}) => {
@@ -22,15 +20,15 @@ const Page = ({data}) => {
   );
   releaseInfo.image = getImage(imageNode);
 
-
   return (
-    <Layout siteTitle={data.site.siteMetadata.title}>
-      <Release
+    <Layout siteTitle={data.site.siteMetadata.title} smallHeader={true}>
+      <VerticalStackRelease
         key={releaseInfo.id}
         coverImage={releaseInfo.image} 
         title={releaseInfo.title}
         artist={releaseInfo.artist}
         listenLinks={releaseInfo.listenLinks}
+        blurb={releaseInfo.blurb}
       />
     </Layout>
   )
@@ -51,6 +49,7 @@ export const query = graphql`query($id: String) {
     title
     cover
     releaseDate
+    blurb
     listenLinks {
       bandcamp
       apple

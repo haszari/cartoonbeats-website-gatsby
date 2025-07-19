@@ -1,0 +1,32 @@
+@use '../../pages/_globals.scss';
+
+.Release {
+  @include globals.full-width;
+  position: relative; /* so can position skewed background div */
+  
+  .Release-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1em 0;
+    color: globals.$text;
+  
+    .Release-info {
+      text-align: center;
+      margin: 1em;
+      width: 100%;
+  
+      .Release-info-title {
+        font-size: 140%;
+        font-weight: bold;
+        // Reset link color to regular text colour.
+        color: globals.$text;
+      }
+      
+      .Release-info-artist {
+        font-size: 120%;
+      }    
+    };
+  }
+}
+
