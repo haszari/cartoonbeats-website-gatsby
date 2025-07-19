@@ -56,6 +56,11 @@ a {
   justify-content: center;
   gap: 1em;
   padding: 1em 1em 0.5em;
+
+  a {
+    // Override header links to look like regular text.
+    color: globals.$text;
+  }
     
   .SiteLogo {
     width: 3em;

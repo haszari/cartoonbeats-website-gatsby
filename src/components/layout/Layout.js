@@ -22,7 +22,9 @@ export default function Layout({ siteTitle, children, smallHeader = false }) {
             alt="mixer logo"
           />
         </Link>
-        <div className="SiteTitle">{siteTitle}</div>
+        <Link to="/">
+          <div className="SiteTitle">{siteTitle}</div>
+        </Link>
       </div>
       <div className="PageContent">
         {children}
