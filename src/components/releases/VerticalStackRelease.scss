@@ -14,10 +14,14 @@
     .Release-blurb {
       padding: 1em;
       text-align: center;
+      font-size: 1.4em;
     }
 
     @media only screen and (min-width: globals.$medium) {
       .Release-info {
+        font-size: 1em;
+      }
+      .Release-blurb {
         font-size: 1em;
       }
     }
