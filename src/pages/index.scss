@@ -28,7 +28,7 @@ a {
   .gatsby-image-wrapper, img {
     width: 100%;
     height: auto;
-    max-width: 200px;
+    max-width: 70vw;
   }
 
   @media only screen and (min-width: globals.$small) {
@@ -36,7 +36,7 @@ a {
     font-size: 0.8em;
 
     .gatsby-image-wrapper, img {
-      max-width:250px;
+      max-width: 60vw;
     }  
   }
 
@@ -45,7 +45,7 @@ a {
     font-size: 1.2em;
 
     .gatsby-image-wrapper, img {
-      max-width:300px;
+      max-width: max(50vw, 400px);
     }
   }
 }

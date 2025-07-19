@@ -21,7 +21,7 @@ function HomePageSlantRelease({ title, artist, coverImage, listenLinks, linkToPa
   }
   
   return (
-    <div className="Release">
+    <div className="Release HomePageSlantRelease">
       <div className="Release-slant"></div>
       <div className="Release-content">
           <div className="Release-info">

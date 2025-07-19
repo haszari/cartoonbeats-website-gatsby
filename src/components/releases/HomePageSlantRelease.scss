@@ -1,9 +1,7 @@
 @use '../../pages/_globals.scss';
+@use './Release-base.scss';
 
-.Release {
-  @include globals.full-width;
-  position: relative; /* so can position skewed background div */
-
+.Release.HomePageSlantRelease {
   .Release-slant {
     position: absolute;
     left: 0;
@@ -16,34 +14,20 @@
   }
   
   .Release-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 1em 0;
-    color: globals.$text;
-  
     .Release-info {
       text-align: right;
       margin: 1em;
       width: 30%;
-  
-      .Release-info-title {
-        font-size: 140%;
-        font-weight: bold;
-        // Reset link color to regular text colour.
-        color: globals.$text;
-      }
-      
-      .Release-info-artist {
-        font-size: 120%;
-      }    
-    };
+    }
   }
 
   &:nth-child(even) {
     .Release-slant {
       background-color: globals.$dark-bg-b;
       transform: skewY(+1.5deg);    
+    }
+    .ListenLinks {
+      justify-content: flex-start;
     }
 
     .Release-content {
@@ -55,11 +39,32 @@
     }
   }
 
+
   &:nth-child(odd) {
+    .ListenLinks {
+      justify-content: flex-end;
+    }
     .Release-slant {
       background-color: globals.$dark-bg-a;
       transform: skewY(-1.5deg);    
     }
   }
+
+  .gatsby-image-wrapper, img {
+    max-width: 200px;
+  }
+
+  @media only screen and (min-width: globals.$small) {
+    .gatsby-image-wrapper, img {
+      max-width: 250px;
+    }  
+  }
+
+  @media only screen and (min-width: globals.$medium) {
+    .gatsby-image-wrapper, img {
+      max-width: 300px;
+    }
+  }
+
 }
 
