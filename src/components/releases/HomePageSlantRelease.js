@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import ListenLinks from "./ListenLinks"
+import ListenIcons from "./ListenIcons"
 
 import "./HomePageSlantRelease.scss"
 
@@ -30,7 +30,7 @@ function HomePageSlantRelease({ title, artist, coverImage, listenLinks, linkToPa
                 {title}</div>
             </MaybeLinkToRelease>
             <div className="Release-info-artist">{artist}</div>
-            <ListenLinks links={listenLinks} />
+            <ListenIcons links={listenLinks} />
           </div>
           <MaybeLinkToRelease>
             <div className="Release-cover">

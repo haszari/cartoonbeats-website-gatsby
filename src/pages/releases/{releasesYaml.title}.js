@@ -7,8 +7,6 @@ import { getImage } from "gatsby-plugin-image"
 import Layout from "../../components/layout"
 import { VerticalStackRelease } from "../../components/releases"
 
-// import "../fonts.scss"
-// import "../index.scss"
 import "../../fontello/css/fontawesome-musicstores.css"
 
 const Page = ({data}) => {
@@ -31,8 +29,8 @@ const Page = ({data}) => {
         title={releaseInfo.title}
         artist={releaseInfo.artist}
         listenLinks={releaseInfo.listenLinks}
+        blurb={releaseInfo.blurb}
       />
-      <p>{releaseInfo.blurb}</p>
     </Layout>
   )
 }
