@@ -2,6 +2,9 @@
 @use './Release-base.scss';
 
 .Release.HomePageSlantRelease {
+  @include globals.full-width;
+  position: relative; /* so can position skewed background div */
+
   .Release-slant {
     position: absolute;
     left: 0;

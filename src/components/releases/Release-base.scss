@@ -1,9 +1,6 @@
 @use '../../pages/_globals.scss';
 
-.Release {
-  @include globals.full-width;
-  position: relative; /* so can position skewed background div */
-  
+.Release {  
   .Release-content {
     display: flex;
     align-items: flex-start;
