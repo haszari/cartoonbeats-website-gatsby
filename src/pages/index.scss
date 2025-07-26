@@ -28,25 +28,16 @@ a {
   .gatsby-image-wrapper, img {
     width: 100%;
     height: auto;
-    max-width: 70vw;
   }
 
   @media only screen and (min-width: globals.$small) {
     max-width: calc(100% - 0.5em);
     font-size: 0.8em;
-
-    .gatsby-image-wrapper, img {
-      max-width: 60vw;
-    }  
   }
 
   @media only screen and (min-width: globals.$medium) {
     max-width: min( 800px, calc(100% - 1em) );
     font-size: 1.2em;
-
-    .gatsby-image-wrapper, img {
-      max-width: max(50vw, 400px);
-    }
   }
 }
 
