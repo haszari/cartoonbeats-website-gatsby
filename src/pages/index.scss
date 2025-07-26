@@ -55,9 +55,9 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 1em;
-  padding: 1em 1em 0.5em;
   font-family: 'Hedvig Letters Serif';
   color: globals.$text;
+
 
   a {
     // Override header links to look like regular text.
@@ -79,6 +79,7 @@ a {
 }
 
 .Header {  
+  padding: 1em 1em 0.5em;
   .SiteTitle {
     font-size: 1.4em;
     font-weight: bold;
@@ -104,6 +105,9 @@ a {
 }
 
 .Footer {
+  padding: 1em;
+  align-items: flex-end;
+
   .SiteLogo {
     width: 3em;
   };
@@ -118,6 +122,7 @@ a {
     left: 0;
     right: 0;
     height: 100px;
+    z-index: -1;
     transform: skewY(1.5deg);
   }
 }
