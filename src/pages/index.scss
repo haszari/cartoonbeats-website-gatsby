@@ -20,7 +20,7 @@ a {
   cursor: pointer;
 }
 
-.PageContent {
+.PageContent, .Header, .Footer {
   max-width: 400px;
   margin: auto;
   font-size: 0.8em;
@@ -50,12 +50,14 @@ a {
   }
 }
 
-.Header {
+.Header, .Footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1em;
   padding: 1em 1em 0.5em;
+  font-family: 'Hedvig Letters Serif';
+  color: globals.$text;
 
   a {
     // Override header links to look like regular text.
@@ -65,15 +67,8 @@ a {
   .SiteLogo {
     width: 3em;
   };
-  
-  .SiteTitle {
-    font-family: 'Hedvig Letters Serif';
-    font-size: 1.4em;
-    font-weight: bold;
-  }
-  
+
   @media only screen and (min-width: globals.$small) {
-    justify-content: space-evenly;
     .SiteLogo {
       width: 7em;
     };
@@ -83,9 +78,14 @@ a {
   }
 }
 
-.Header.Header-small {
-  justify-content: space-between;
+.Header {  
+  .SiteTitle {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+}
 
+.Header.Header-small {
   .SiteLogo {
     width: 2em;
   };
@@ -94,7 +94,6 @@ a {
   }
 
   @media only screen and (min-width: globals.$small) {
-    justify-content: space-evenly;
     .SiteLogo {
       width: 3em;
     };
@@ -104,13 +103,14 @@ a {
   }
 }
 
-
 .Footer {
-  width: 100%;
-  height: 116px;
-  margin-top: 0.2em;
-  border-bottom: #222625 100px solid;
-  box-sizing: border-box;
+  .SiteLogo {
+    width: 3em;
+  };
+  .Menu {
+    display: flex;
+    gap: 2em;
+  }
 
   .Footer-slant {
     position: absolute;
