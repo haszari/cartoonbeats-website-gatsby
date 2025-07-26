@@ -41,7 +41,7 @@ export default function Layout({ siteTitle, children, smallHeader = false }) {
         </Link>
         <div className="Menu">
           <Link to="/">Music</Link>
-          <Link to="/2025/twisted-frequency-moments/">Blog</Link>
+          <Link to="/blog">Blog</Link>
         </div>
       </div>
     </div>
