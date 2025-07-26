@@ -9,6 +9,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 // Define the template for blog post
 const blogPost = path.resolve(`./src/templates/blog-post.js`)
+const blogIndex = path.resolve(`./src/templates/blog-index.js`)
 
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
@@ -43,12 +44,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
-
+  
+  // Generate a node for each post.
   if (posts.length > 0) {
     posts.forEach((post, index) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
-
+      
       createPage({
         path: `/blog${post.fields.slug}`,
         component: blogPost,
@@ -59,7 +61,24 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         },
       })
     })
+    
+    // Generate nodes for pages of blog index.
+    const postsPerPage = 9;
+    const numPages = Math.ceil(posts.length / postsPerPage)
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/blog` : `/blog/p/${i + 1}`,
+        component: blogIndex,
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
+        },
+      })
+    })
   }
+
 }
 
 /**
