@@ -35,7 +35,7 @@ const BlogIndexPage = ({data}) => {
 
 export default BlogIndexPage
 
-export const Head = () => <title>Cartoon Beats Reality - blog</title>
+export const Head = () => <title>Blog | Cartoon Beats Reality</title>
 
 
 export const query = graphql`{
