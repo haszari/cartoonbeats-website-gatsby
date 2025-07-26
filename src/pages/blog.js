@@ -14,16 +14,16 @@ const BlogIndexPage = ({data}) => {
 
   return (
     <Layout siteTitle={data.site.siteMetadata.title}>
-      <div>
+      <div className="BlogGrid">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           const featuredImg = getImage(post.frontmatter.featuredImage?.childImageSharp?.gatsbyImageData) || null
 
           return (
-            <div key={post.fields.slug}>
+            <div className="BlogGrid-postCard" key={post.fields.slug}>
               <Link to={`/blog${post.fields.slug}`} itemProp="url">
                 {featuredImg ? (<GatsbyImage image={featuredImg} />) : <div className="PostGrid-featuredImage-placeholder"/>}
-                <h2><span itemProp="headline">{title}</span></h2>
+                <h4><span itemProp="headline">{title}</span></h4>
               </Link>
             </div>
           )
@@ -55,7 +55,7 @@ export const query = graphql`{
         title
         featuredImage {
           childImageSharp {
-            gatsbyImageData(width: 800)
+            gatsbyImageData(width: 280, height: 280)
           }
         }
       }

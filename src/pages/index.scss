@@ -25,18 +25,13 @@ a {
   margin: auto;
   font-size: 0.8em;
 
-  .gatsby-image-wrapper, img {
-    width: 100%;
-    height: auto;
-  }
-
   @media only screen and (min-width: globals.$small) {
     max-width: calc(100% - 0.5em);
     font-size: 0.8em;
   }
 
   @media only screen and (min-width: globals.$medium) {
-    max-width: min( 800px, calc(100% - 1em) );
+    max-width: min( 900px, calc(100% - 1em) );
     font-size: 1.2em;
   }
 }
@@ -115,5 +110,23 @@ a {
     height: 100px;
     z-index: -1;
     transform: skewY(1.5deg);
+  }
+}
+
+.BlogGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+
+  margin-top: 1em;
+
+  .BlogGrid-postCard {
+    max-width: 280px;
+
+    h4 {
+      margin-block-start: 0.7em;
+      margin-block-end: 0.7em;
+    }
   }
 }
