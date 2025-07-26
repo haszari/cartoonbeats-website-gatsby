@@ -30,7 +30,19 @@ export default function Layout({ siteTitle, children, smallHeader = false }) {
         {children}
       </div>
       <div className="Footer">
-        <div className="Footer-slant"></div>
+        {/* <div className="Footer-slant"></div> */}
+        <Link to="/">
+          <StaticImage
+            className="SiteLogo"
+            src="../../images/site-logo.png"
+            placeholder="none"
+            alt="mixer logo"
+          />
+        </Link>
+        <div className="Menu">
+          <Link to="/">Music</Link>
+          <Link to="/blog">Blog</Link>
+        </div>
       </div>
     </div>
   )

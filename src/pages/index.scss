@@ -20,42 +20,30 @@ a {
   cursor: pointer;
 }
 
-.PageContent {
+.PageContent, .Header, .Footer {
   max-width: 400px;
   margin: auto;
   font-size: 0.8em;
 
-  .gatsby-image-wrapper, img {
-    width: 100%;
-    height: auto;
-    max-width: 70vw;
-  }
-
   @media only screen and (min-width: globals.$small) {
     max-width: calc(100% - 0.5em);
     font-size: 0.8em;
-
-    .gatsby-image-wrapper, img {
-      max-width: 60vw;
-    }  
   }
 
   @media only screen and (min-width: globals.$medium) {
-    max-width: min( 800px, calc(100% - 1em) );
+    max-width: min( 900px, calc(100% - 1em) );
     font-size: 1.2em;
-
-    .gatsby-image-wrapper, img {
-      max-width: max(50vw, 400px);
-    }
   }
 }
 
-.Header {
+.Header, .Footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1em;
-  padding: 1em 1em 0.5em;
+  font-family: 'Hedvig Letters Serif';
+  color: globals.$text;
+
 
   a {
     // Override header links to look like regular text.
@@ -65,15 +53,8 @@ a {
   .SiteLogo {
     width: 3em;
   };
-  
-  .SiteTitle {
-    font-family: 'Hedvig Letters Serif';
-    font-size: 1.4em;
-    font-weight: bold;
-  }
-  
+
   @media only screen and (min-width: globals.$small) {
-    justify-content: space-evenly;
     .SiteLogo {
       width: 7em;
     };
@@ -83,9 +64,15 @@ a {
   }
 }
 
-.Header.Header-small {
-  justify-content: space-between;
+.Header {  
+  padding: 1em 1em 0.5em;
+  .SiteTitle {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+}
 
+.Header.Header-small {
   .SiteLogo {
     width: 2em;
   };
@@ -94,7 +81,6 @@ a {
   }
 
   @media only screen and (min-width: globals.$small) {
-    justify-content: space-evenly;
     .SiteLogo {
       width: 3em;
     };
@@ -104,13 +90,17 @@ a {
   }
 }
 
-
 .Footer {
-  width: 100%;
-  height: 116px;
-  margin-top: 0.2em;
-  border-bottom: #222625 100px solid;
-  box-sizing: border-box;
+  padding: 1em;
+  align-items: flex-end;
+
+  .SiteLogo {
+    width: 3em;
+  };
+  .Menu {
+    display: flex;
+    gap: 2em;
+  }
 
   .Footer-slant {
     position: absolute;
@@ -118,6 +108,25 @@ a {
     left: 0;
     right: 0;
     height: 100px;
+    z-index: -1;
     transform: skewY(1.5deg);
+  }
+}
+
+.BlogGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+
+  margin-top: 1em;
+
+  .BlogGrid-postCard {
+    max-width: 280px;
+
+    h4 {
+      margin-block-start: 0.7em;
+      margin-block-end: 0.7em;
+    }
   }
 }

@@ -3,17 +3,14 @@
 
 .Release.HomePageSlantRelease {
   @include globals.full-width;
-  position: relative; /* so can position skewed background div */
 
   .Release-slant {
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
-    // big overhang so don't see gap on wide monitor
-    bottom: -100px;
+    top: -1em;
+    bottom: -1em;
     z-index: -1;
-    transform: skewY(-1.5deg);
   }
   
   .Release-content {
@@ -24,32 +21,36 @@
     }
   }
 
-  &:nth-child(even) {
-    .Release-slant {
-      background-color: globals.$dark-bg-b;
-      transform: skewY(+1.5deg);    
-    }
-    .ListenIcons {
-      justify-content: flex-start;
-    }
-
-    .Release-content {
-      flex-direction: row-reverse;
-  
-      .Release-info {
-        text-align: left;
-      }
-    }
-  }
-
-
   &:nth-child(odd) {
     .ListenIcons {
       justify-content: flex-end;
     }
     .Release-slant {
       background-color: globals.$dark-bg-a;
-      transform: skewY(-1.5deg);    
+      clip-path: polygon(
+        0% 8%,
+        100% 0%, 
+        100% 100%,
+        0% 92%
+      ); 
+    }
+  }
+
+  &:nth-child(even) {
+    .Release-slant {
+      // Fall through to background colour - lighter trapezoid on odd releases.
+      display: none;
+    }
+    .ListenIcons {
+      justify-content: flex-start;
+    }
+    
+    .Release-content {
+      flex-direction: row-reverse;
+      
+      .Release-info {
+        text-align: left;
+      }
     }
   }
 

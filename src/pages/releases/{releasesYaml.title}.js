@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import { getImage } from "gatsby-plugin-image"
 
 import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 import { VerticalStackRelease } from "../../components/releases"
 
 import "../../fontello/css/fontawesome-musicstores.css"
@@ -35,6 +36,15 @@ const Page = ({data}) => {
 }
 
 export default Page;
+
+export const Head = ({ data: { releasesYaml: post } }) => {
+  return (
+    <Seo
+      title={`${post.artist} - ${post.title}`}
+      description={post.blurb || ''}
+    />
+  )
+}
 
 export const query = graphql`query($id: String) {
   site {
