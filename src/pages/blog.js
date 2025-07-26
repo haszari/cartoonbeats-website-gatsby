@@ -11,7 +11,6 @@ import "./index.scss"
 
 const BlogIndexPage = ({data}) => {
   const posts = data.allMarkdownRemark.nodes
-  // let featuredImg = getImage(post.frontmatter.featuredImage?.childImageSharp?.gatsbyImageData) || null
 
   return (
     <Layout siteTitle={data.site.siteMetadata.title}>
@@ -22,12 +21,10 @@ const BlogIndexPage = ({data}) => {
 
           return (
             <div key={post.fields.slug}>
-            {featuredImg ? (<GatsbyImage image={featuredImg} />) : <div className="PostGrid-featuredImage-placeholder"/>}
-              <h2>
-                <Link to={post.fields.slug} itemProp="url">
-                  <span itemProp="headline">{title}</span>
-                </Link>
-              </h2>
+              <Link to={`/blog${post.fields.slug}`} itemProp="url">
+                {featuredImg ? (<GatsbyImage image={featuredImg} />) : <div className="PostGrid-featuredImage-placeholder"/>}
+                <h2><span itemProp="headline">{title}</span></h2>
+              </Link>
             </div>
           )
         })}
