@@ -40,8 +40,8 @@ export default function Layout({ siteTitle, children, smallHeader = false }) {
           />
         </Link>
         <div className="Menu">
-          <Link to="/">Music</Link>
           <Link to="/blog">Blog</Link>
+          <Link to="/">Music</Link>
         </div>
       </div>
     </div>

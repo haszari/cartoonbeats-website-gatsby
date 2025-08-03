@@ -95,12 +95,15 @@ a {
   align-items: flex-end;
 
   .SiteLogo {
-    width: 3em;
+    width: 4em;
   };
   .Menu {
     display: flex;
-    gap: 2em;
+    gap: 1em;
   }
+  .Footer .Menu a {
+    padding: 1em 0.5em;
+}
 
   .Footer-slant {
     position: absolute;
