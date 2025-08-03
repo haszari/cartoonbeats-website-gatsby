@@ -26,12 +26,12 @@ a {
   font-size: 0.8em;
 
   @media only screen and (min-width: globals.$small) {
-    max-width: calc(100% - 0.5em);
+    max-width: calc(100% - 1.5em);
     font-size: 0.8em;
   }
 
   @media only screen and (min-width: globals.$medium) {
-    max-width: min( 900px, calc(100% - 1em) );
+    max-width: min( 900px, calc(100% - 2em) );
     font-size: 1.2em;
   }
 }
