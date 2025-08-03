@@ -36,7 +36,62 @@ a {
   }
 }
 
-.Header, .Footer {
+.Header-menuBar {  
+  padding: 1em 1em 0.5em;
+  .SiteTitle {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+}
+
+.Header .Header-menuBar-small {
+  .SiteLogo {
+    width: 2em;
+  };
+  .SiteTitle {
+    font-size: 1em;
+  }
+
+  @media only screen and (min-width: globals.$small) {
+    .SiteLogo {
+      width: 3em;
+    };
+    .SiteTitle {
+      font-size: 1.4em;
+    }
+  }
+}
+
+.Header-fullBleedImage {
+  position: relative;
+  
+  .FullBleedImage {
+    display: block;
+    max-height: 16em;
+  }
+  
+  .Header-menuBar-small {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.Header-fullBleedImage {
+  max-width: 100%;
+
+  @media only screen and (min-width: globals.$small) {
+    max-width: 100%;
+  }
+
+  @media only screen and (min-width: globals.$medium) {
+    max-width: 100%;
+  }
+}
+
+
+.Header-menuBar, .Footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,32 +115,6 @@ a {
     };
     .SiteTitle {
       font-size: 2em;
-    }
-  }
-}
-
-.Header {  
-  padding: 1em 1em 0.5em;
-  .SiteTitle {
-    font-size: 1.4em;
-    font-weight: bold;
-  }
-}
-
-.Header.Header-small {
-  .SiteLogo {
-    width: 2em;
-  };
-  .SiteTitle {
-    font-size: 1em;
-  }
-
-  @media only screen and (min-width: globals.$small) {
-    .SiteLogo {
-      width: 3em;
-    };
-    .SiteTitle {
-      font-size: 1.4em;
     }
   }
 }

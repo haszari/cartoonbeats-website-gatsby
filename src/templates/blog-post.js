@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -10,11 +10,10 @@ const BlogPostTemplate = ({
   location,
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
-  let featuredImg = getImage(post.frontmatter.featuredImage?.childImageSharp?.gatsbyImageData) || null
+  let featuredImg = getImage(post.frontmatter.featuredImage?.childImageSharp?.gatsbyImageData) || null;
 
   return (
-    <Layout location={location} siteTitle={siteTitle}>
-      {featuredImg && (<GatsbyImage image={featuredImg} />)}
+    <Layout location={location} siteTitle={siteTitle} headerImage={featuredImg}>
       <article
         className="blog-post"
         itemScope
@@ -93,7 +92,7 @@ export const pageQuery = graphql`
         description
         featuredImage {
           childImageSharp {
-            gatsbyImageData(width: 900)
+            gatsbyImageData(width: 1500)
           }
         }
       }

@@ -3,17 +3,17 @@ import classnames from 'classnames';
 
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image"
 
-
-export default function Layout({ siteTitle, children, smallHeader = false }) {
-  const headerClasses = classnames([
-    'Header',
-    smallHeader ? 'Header-small' : null,
+function HeaderMenu({ siteTitle, smallHeader = false }) {
+  const classes = classnames([
+    'Header-menuBar',
+    smallHeader ? 'Header-menuBar-small' : null
   ]);
-
+  
   return (
-    <div>
-      <div className={headerClasses}>
+    <>
+      <div className={classes}>
         <Link to="/">
           <StaticImage
             className="SiteLogo"
@@ -26,11 +26,41 @@ export default function Layout({ siteTitle, children, smallHeader = false }) {
           <div className="SiteTitle">{siteTitle}</div>
         </Link>
       </div>
+    </>
+  )
+}
+
+function Header({ siteTitle, smallHeader = false }) {
+  const headerClasses = "Header"
+  return (
+    <div className={headerClasses}>
+      <HeaderMenu siteTitle={siteTitle} smallHeader={smallHeader} />
+    </div>
+  )
+}
+
+function FullBleedHeader({ siteTitle, headerImage = null }) {
+  const headerClasses = "Header Header-fullBleedImage"
+  return (
+    <div className={headerClasses}>
+      {headerImage && (<GatsbyImage image={headerImage} className="FullBleedImage" />)}
+      <HeaderMenu siteTitle={siteTitle} smallHeader={true} />
+    </div>
+  )
+}
+
+export default function Layout({ siteTitle, children, smallHeader = false, headerImage = null }) {
+  const header = headerImage ? 
+    ( <FullBleedHeader siteTitle={siteTitle} headerImage={headerImage} /> ) :
+    ( <Header siteTitle={siteTitle} smallHeader={smallHeader} /> );
+
+  return (
+    <>
+      {header}
       <div className="PageContent">
         {children}
       </div>
       <div className="Footer">
-        {/* <div className="Footer-slant"></div> */}
         <Link to="/">
           <StaticImage
             className="SiteLogo"
@@ -44,6 +74,6 @@ export default function Layout({ siteTitle, children, smallHeader = false }) {
           <Link to="/">Music</Link>
         </div>
       </div>
-    </div>
+    </>
   )
 }
