@@ -2,8 +2,9 @@ import React from "react"
 import classnames from 'classnames';
 
 import { StaticImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image"
+import Seo from "../seo"
 
 function HeaderMenu({ siteTitle, smallHeader = false }) {
   const classes = classnames([
@@ -49,13 +50,34 @@ function FullBleedHeader({ siteTitle, headerImage = null }) {
   )
 }
 
-export default function Layout({ siteTitle, children, smallHeader = false, headerImage = null }) {
+export default function Layout({ 
+  children, 
+  smallHeader = false, 
+  headerImage = null,
+  pageTitle,
+  pageDescription 
+}) {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  )
+
+  const siteTitle = site.siteMetadata.title
+  
   const header = headerImage ? 
     ( <FullBleedHeader siteTitle={siteTitle} headerImage={headerImage} /> ) :
     ( <Header siteTitle={siteTitle} smallHeader={smallHeader} /> );
 
   return (
     <>
+      <Seo title={pageTitle} description={pageDescription} />
       {header}
       <div className="PageContent">
         {children}

@@ -28,11 +28,17 @@ const Seo = ({ description, title, children }) => {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
+  // If no title is provided, use just the site title (for home page)
+  // If title is provided, combine it with site title
+  const pageTitle = title 
+    ? (defaultTitle ? `${title} | ${defaultTitle}` : title)
+    : defaultTitle
+
   return (
     <>
-      <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
+      <title>{pageTitle}</title>
       <meta name="description" content={metaDescription} />
-      <meta property="og:title" content={title} />
+      <meta property="og:title" content={title || defaultTitle} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary" />
@@ -40,7 +46,7 @@ const Seo = ({ description, title, children }) => {
         name="twitter:creator"
         content={site.siteMetadata?.social?.twitter || ``}
       />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:title" content={title || defaultTitle} />
       <meta name="twitter:description" content={metaDescription} />
       {children}
     </>

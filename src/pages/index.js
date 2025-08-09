@@ -1,6 +1,5 @@
 import * as React from "react"
 
-
 import { graphql } from 'gatsby';
 import { getImage } from "gatsby-plugin-image"
 
@@ -27,7 +26,7 @@ const MainPage = ({data}) => {
     });
 
   return (
-    <Layout siteTitle={data.site.siteMetadata.title}>
+    <Layout>
       <ReleaseList
         releases={releasesWithImages}
       />
@@ -37,15 +36,8 @@ const MainPage = ({data}) => {
 
 export default MainPage
 
-export const Head = () => <title>Cartoon Beats Reality</title>
-
 
 export const query = graphql`{
-  site {
-    siteMetadata {
-      title
-    }
-  }
   allReleasesYaml {
     nodes {
       id

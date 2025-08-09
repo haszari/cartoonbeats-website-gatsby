@@ -15,8 +15,10 @@ const BlogIndexTemplate = ({ data, pageContext }) => {
   const prevPage = currentPage - 1 === 1 ? "/blog" : `/blog/p/${currentPage - 1}`
   const nextPage = `/blog/p/${currentPage + 1}`
 
+  const pageTitle = currentPage === 1 ? "Blog" : `Blog - Page ${currentPage}`
+
   return (
-    <Layout siteTitle={data.site.siteMetadata.title}>
+    <Layout pageTitle={pageTitle}>
       <div className="BlogGrid">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -86,19 +88,8 @@ const BlogIndexTemplate = ({ data, pageContext }) => {
 
 export default BlogIndexTemplate
 
-export const Head = ({ pageContext }) => {
-  const { currentPage } = pageContext
-  const title = currentPage === 1 ? "Blog | Cartoon Beats Reality" : `Blog - Page ${currentPage} | Cartoon Beats Reality`
-  return <title>{title}</title>
-}
-
 export const query = graphql`
   query BlogIndexQuery($skip: Int!, $limit: Int!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark(
       sort: { frontmatter: { date: DESC } }
       limit: $limit

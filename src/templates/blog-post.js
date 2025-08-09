@@ -3,17 +3,20 @@ import { Link, graphql } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
 }) => {
-  const siteTitle = site.siteMetadata?.title || `Title`
   let featuredImg = getImage(post.frontmatter.featuredImage?.childImageSharp?.gatsbyImageData) || null;
 
   return (
-    <Layout location={location} siteTitle={siteTitle} headerImage={featuredImg}>
+    <Layout 
+      location={location} 
+      headerImage={featuredImg}
+      pageTitle={post.frontmatter.title}
+      pageDescription={post.frontmatter.description || post.excerpt}
+    >
       <article
         className="blog-post"
         itemScope
@@ -60,15 +63,6 @@ const BlogPostTemplate = ({
   )
 }
 
-export const Head = ({ data: { markdownRemark: post } }) => {
-  return (
-    <Seo
-      title={post.frontmatter.title}
-      description={post.frontmatter.description || post.excerpt}
-    />
-  )
-}
-
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
@@ -77,11 +71,6 @@ export const pageQuery = graphql`
     $previousPostId: String
     $nextPostId: String
   ) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)

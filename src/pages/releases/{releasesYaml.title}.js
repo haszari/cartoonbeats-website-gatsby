@@ -1,11 +1,9 @@
 import * as React from "react"
 
-
 import { graphql } from 'gatsby';
 import { getImage } from "gatsby-plugin-image"
 
 import Layout from "../../components/layout"
-import Seo from "../../components/seo"
 import { VerticalStackRelease } from "../../components/releases"
 
 import "../../fontello/css/fontawesome-musicstores.css"
@@ -22,7 +20,11 @@ const Page = ({data}) => {
   releaseInfo.image = getImage(imageNode);
 
   return (
-    <Layout siteTitle={data.site.siteMetadata.title} smallHeader={true}>
+    <Layout 
+      smallHeader={true}
+      pageTitle={`${releaseInfo.artist} - ${releaseInfo.title}`}
+      pageDescription={releaseInfo.blurb || `${releaseInfo.artist} - ${releaseInfo.title} release`}
+    >
       <VerticalStackRelease
         key={releaseInfo.id}
         coverImage={releaseInfo.image} 
@@ -38,20 +40,11 @@ const Page = ({data}) => {
 export default Page;
 
 export const Head = ({ data: { releasesYaml: post } }) => {
-  return (
-    <Seo
-      title={`${post.artist} - ${post.title}`}
-      description={post.blurb || ''}
-    />
-  )
+  // SEO is now handled by Layout component
+  return null
 }
 
 export const query = graphql`query($id: String) {
-  site {
-    siteMetadata {
-      title
-    }
-  }
   releasesYaml(id: { eq: $id }) {
     id
     catalogueNumber
