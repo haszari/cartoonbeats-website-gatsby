@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontawesome-musicstores';
-  src: url('../font/fontawesome-musicstores.eot?67250792');
-  src: url('../font/fontawesome-musicstores.eot?67250792#iefix') format('embedded-opentype'),
-       url('../font/fontawesome-musicstores.woff2?67250792') format('woff2'),
-       url('../font/fontawesome-musicstores.woff?67250792') format('woff'),
-       url('../font/fontawesome-musicstores.ttf?67250792') format('truetype'),
-       url('../font/fontawesome-musicstores.svg?67250792#fontawesome-musicstores') format('svg');
+  src: url('../font/fontawesome-musicstores.eot?67410937');
+  src: url('../font/fontawesome-musicstores.eot?67410937#iefix') format('embedded-opentype'),
+       url('../font/fontawesome-musicstores.woff2?67410937') format('woff2'),
+       url('../font/fontawesome-musicstores.woff?67410937') format('woff'),
+       url('../font/fontawesome-musicstores.ttf?67410937') format('truetype'),
+       url('../font/fontawesome-musicstores.svg?67410937#fontawesome-musicstores') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontawesome-musicstores';
-    src: url('../font/fontawesome-musicstores.svg?67250792#fontawesome-musicstores') format('svg');
+    src: url('../font/fontawesome-musicstores.svg?67410937#fontawesome-musicstores') format('svg');
   }
 }
 */
@@ -55,10 +55,16 @@
 }
 
 .icon-beatport:before { content: '\e800'; } /* '' */
+.icon-bluesky:before { content: '\e801'; } /* '' */
+.icon-mastodon:before { content: '\e802'; } /* '' */
+.icon-tiktok:before { content: '\e803'; } /* '' */
 .icon-soundcloud:before { content: '\f089'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-youtube:before { content: '\f16a'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-apple:before { content: '\f179'; } /* '' */
 .icon-google:before { content: '\f1a0'; } /* '' */
 .icon-spotify:before { content: '\f1bc'; } /* '' */
 .icon-amazon:before { content: '\f270'; } /* '' */
+.icon-facebook-squared:before { content: '\f308'; } /* '' */
 .icon-bandcamp:before { content: '\f32b'; } /* '' */

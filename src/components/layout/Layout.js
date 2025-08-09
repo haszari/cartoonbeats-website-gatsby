@@ -31,8 +31,8 @@ function HeaderMenu({ siteTitle, smallHeader = false }) {
   )
 }
 
-function Header({ siteTitle, smallHeader = false }) {
-  const headerClasses = "Header"
+function Header({ siteTitle, smallHeader = false, pageClass = '' }) {
+  const headerClasses = `Header ${pageClass}`;
   return (
     <div className={headerClasses}>
       <HeaderMenu siteTitle={siteTitle} smallHeader={smallHeader} />
@@ -40,8 +40,8 @@ function Header({ siteTitle, smallHeader = false }) {
   )
 }
 
-function FullBleedHeader({ siteTitle, headerImage = null }) {
-  const headerClasses = "Header Header-fullBleedImage"
+function FullBleedHeader({ siteTitle, headerImage = null, pageClass = '' }) {
+  const headerClasses = `Header Header-fullBleedImage ${pageClass}`;
   return (
     <div className={headerClasses}>
       {headerImage && (<GatsbyImage image={headerImage} className="FullBleedImage" />)}
@@ -55,6 +55,7 @@ export default function Layout({
   smallHeader = false, 
   noHeader = false,
   headerImage = null,
+  pageClass = '',
   pageTitle,
   pageDescription 
 }) {
@@ -73,17 +74,17 @@ export default function Layout({
   const siteTitle = site.siteMetadata.title
   
   const header = headerImage ? 
-    ( <FullBleedHeader siteTitle={siteTitle} headerImage={headerImage} /> ) :
-    ( <Header siteTitle={siteTitle} smallHeader={smallHeader} /> );
+    ( <FullBleedHeader siteTitle={siteTitle} headerImage={headerImage} pageClass /> ) :
+    ( <Header siteTitle={siteTitle} smallHeader={smallHeader} pageClass /> );
 
   return (
     <>
       <Seo title={pageTitle} description={pageDescription} />
       {noHeader || header}
-      <div className="PageContent">
+      <div className={`PageContent ${pageClass}`}>
         {children}
       </div>
-      <div className="Footer">
+      <div className={`Footer ${pageClass}`}>
         <Link className="HomeLink" to="/">
           <StaticImage
             className="SiteLogo"

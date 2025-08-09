@@ -170,3 +170,51 @@ a {
     }
   }
 }
+
+.SocialIcons {
+  .Icons {
+    display: flex;
+    gap: 0.6em;
+  }
+  .PlatformIcon {
+    font-size: 1.5em;
+  }
+}
+
+.Media.YouTube {
+  position: relative;
+
+  &:before {
+    content: " ";
+    display: block;
+    padding-top: 56.25%;
+  }
+
+  iframe {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.Profile-Haszari {
+  .Row, .Row-flip {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+    
+    .Media {
+      width: 45%;
+    }
+  }
+  .Row {
+    flex-direction: row;
+  }
+  .Row-flip {
+    flex-direction: row-reverse;
+  }
+}
