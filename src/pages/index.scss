@@ -121,18 +121,26 @@ a {
 
 .Footer {
   padding: 1em;
-  align-items: flex-end;
+  align-items: center;
 
   .SiteLogo {
     width: 4em;
   };
+  .SiteTitle {
+    font-size: 80%;
+  }
+  .HomeLink {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
   .Menu {
     display: flex;
     gap: 1em;
   }
   .Footer .Menu a {
     padding: 1em 0.5em;
-}
+  }
 
   .Footer-slant {
     position: absolute;

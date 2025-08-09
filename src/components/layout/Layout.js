@@ -53,6 +53,7 @@ function FullBleedHeader({ siteTitle, headerImage = null }) {
 export default function Layout({ 
   children, 
   smallHeader = false, 
+  noHeader = false,
   headerImage = null,
   pageTitle,
   pageDescription 
@@ -78,18 +79,19 @@ export default function Layout({
   return (
     <>
       <Seo title={pageTitle} description={pageDescription} />
-      {header}
+      {noHeader || header}
       <div className="PageContent">
         {children}
       </div>
       <div className="Footer">
-        <Link to="/">
+        <Link className="HomeLink" to="/">
           <StaticImage
             className="SiteLogo"
             src="../../images/site-logo.png"
             placeholder="none"
             alt="mixer logo"
           />
+          <div className="SiteTitle">{noHeader ? siteTitle : null}</div>
         </Link>
         <div className="Menu">
           <Link to="/blog">Blog</Link>
