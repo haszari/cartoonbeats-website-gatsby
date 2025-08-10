@@ -186,7 +186,7 @@ a {
   position: relative;
 
   &:before {
-    content: " ";
+    content: '';
     display: block;
     padding-top: 56.25%;
   }
@@ -204,6 +204,11 @@ a {
 
 .Profile-Haszari {
   text-align: center;
+
+  .ProfilePic .gatsby-image-wrapper {
+    border-radius: 9999px;
+  }
+
   .Links {
     margin-bottom: 2em;
   }

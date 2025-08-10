@@ -2,6 +2,8 @@ import * as React from "react"
 import classnames from 'classnames';
 
 import { graphql } from 'gatsby';
+import { getImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 
@@ -37,6 +39,8 @@ function SocialIconsGroup({ title, className, items }) {
 }
 
 const HaszariPage = ({data}) => {
+  const profilePic = getImage( data?.allFile?.nodes[0] );
+
   const { socialLinks } = data.artistsYaml;
   const socialPlatforms = [
     "instagram",
@@ -75,6 +79,9 @@ const HaszariPage = ({data}) => {
       noHeader={true}
     >
       <h1>Haszari</h1>
+      <div className="ProfilePic">
+        <GatsbyImage image={profilePic} />
+      </div>
       <div className='Links'>
         { musicIcons }
         { socialIcons }
@@ -137,6 +144,17 @@ export const pageQuery = graphql`query {
       beatport
       soundcloud
       mixcloud
+    }
+  }
+  allFile(filter: {sourceInstanceName: {eq: "images"}, name: {eq: "haszari"}}) {
+    nodes {
+      childImageSharp {
+        gatsbyImageData(
+          aspectRatio: 1
+          width: 340, 
+          placeholder: BLURRED
+        )
+      }
     }
   }
 }
