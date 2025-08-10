@@ -75,11 +75,15 @@ const HaszariPage = ({data}) => {
       noHeader={true}
     >
       <h1>Haszari</h1>
+      <div className='Links'>
+        { musicIcons }
+        { socialIcons }
+      </div>
       <div className="Row-flip">
         <div className="Media YouTube">
           <iframe width="480" src="https://www.youtube.com/embed/RQ6fk0km2xM?si=yVRQyJa-RGZQXHLz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div className="copy">
+        <div className="Copy">
           <p>I’m obsessed with the challenge of playing electronic music live.</p>
         </div>
       </div>
@@ -88,7 +92,7 @@ const HaszariPage = ({data}) => {
         <div className="Media">
           <iframe width="100%" height="352" src="https://open.spotify.com/embed/playlist/0hGwn4tIEtJXtzLF9Uihy5?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-Media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
-        <div className="copy">
+        <div className="Copy">
           <p>My original music is all about the space between sounds.</p>
           <p>You might classify it as tech-house, dub, ambient or breakbeat.</p>
         </div>
@@ -98,17 +102,15 @@ const HaszariPage = ({data}) => {
         <div className="Media">
           <iframe loading="lazy" height="314" width="400"  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1672812102&amp;color=%230c0404&amp;auto_play=true&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=false&amp;visual=true"></iframe>
         </div>
-        <div className="copy">
+        <div className="Copy">
           <p>When DJing, I weave through minimal, techno, and house – eclectic with a consistent groove. Never too serious to get down.</p>
         </div>
       </div>
 
-      <p>I release interesting music by my friends on <a href="/">Cartoon Beats Reality</a>.</p>
-      
-      <div className='Links'>
-        { musicIcons }
-        { socialIcons }
+      <div className="Row">
+        <p>I release interesting music by my friends on <a href="/">Cartoon Beats Reality</a>.</p>
       </div>
+      
     </Layout>
   )
 }

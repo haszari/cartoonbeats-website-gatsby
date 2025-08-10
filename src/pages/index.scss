@@ -175,6 +175,7 @@ a {
   .Icons {
     display: flex;
     gap: 0.6em;
+    justify-content: center;
   }
   .PlatformIcon {
     font-size: 1.5em;
@@ -202,6 +203,11 @@ a {
 }
 
 .Profile-Haszari {
+  text-align: center;
+  .Links {
+    margin-bottom: 2em;
+  }
+
   .Row, .Row-flip {
     display: flex;
     gap: 1em;
@@ -213,8 +219,31 @@ a {
   }
   .Row {
     flex-direction: row;
+    text-align: left;
   }
   .Row-flip {
     flex-direction: row-reverse;
+    text-align: right;
   }
+
+  @media only screen and (max-width: globals.$medium) {
+    .Row, .Row-flip {
+      flex-direction: column-reverse;
+      align-items: center;
+    text-align: center;
+      
+      .Media, .Copy {
+        width: 80%;
+      }
+    }
+  }
+
+    @media only screen and (max-width: globals.$small) {
+    .Row, .Row-flip {
+      .Media, .Copy {
+        width: 100%;
+      }
+    }
+  }
+
 }
