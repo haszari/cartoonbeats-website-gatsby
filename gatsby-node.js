@@ -51,9 +51,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
       
+      let component = blogPost;
+      if (post.fields.custom_template) {
+        const custom = path.resolve(`./src/templates/custom/${post.fields.custom_template}`);
+        component = custom || component;
+      }
+
       createPage({
         path: `/blog${post.fields.slug}`,
-        component: blogPost,
+        component: component,
         context: {
           id: post.id,
           previousPostId,
